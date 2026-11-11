@@ -1,0 +1,8 @@
+{
+ "source_id":"LZC-2013-SCAN", "locator":"print 77; PDF 90; all 32 entries read from scan",
+ "key":"0123456789abcdeffedcba9876543210", "plaintext":"0123456789abcdeffedcba9876543210",
+ "ciphertext":"681edf34d206965e86b3e94f536e4246",
+ "rk":["f12186f9","41662b61","5a6ab19a","7ba92077","367360f4","776a0c61","b6bb89b3","24763151","a520307c","b7584dbd","c30753ed","7ee55b57","6988608c","30d895b7","44ba14af","104495a1","d120b428","73b55fa3","cc874966","92244439","e89e641f","98ca015a","c7159060","99e1fd2e","b79bd80c","1d2115b0","0e228aeb","f1780c81","428d3654","62293496","01cf72e5","9124a012"],
+ "state_after_round":["27fad345","a18b4cb2","11c1e22a","cc13e2ee","f87c5bd5","33220757","77f4c297","7a96f2eb","27dac07f","42dd0f19","b8a5da02","907127fa","8b952b83","d42b7c59","2ffc5831","f69e6888","af2432c4","ed1ec85e","55a3ba22","124b18aa","6ae7725f","f4cba1f9","1dcdfa10","2ff60603","eff24fdc","6fe46b75","893450ad","7b938f4c","536e4246","86b3e94f","d206965e","681edf34"],
+ "index_note":"book X[0] is generated X4 in the mathematical recurrence"
+}

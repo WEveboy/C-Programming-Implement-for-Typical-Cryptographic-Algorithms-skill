@@ -1,0 +1,25 @@
+name: Validate skill
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install independent oracle
+        run: python -m pip install -r skills/c-for-typical-cryptographic-algorithms-skill/evaluation/requirements.txt
+      - name: Validate package
+        run: python scripts/validate_package.py .
+      - name: Execute finite tests and C differential audit
+        working-directory: skills/c-for-typical-cryptographic-algorithms-skill
+        run: |
+          python scripts/test_exact_instances.py
+          python scripts/verify_witnesses.py
+          python scripts/verify_followups.py
+          python scripts/audit_constants.py
+          python scripts/test_hash_source_defects.py
+          python scripts/run_c_audit.py --cc gcc

@@ -1,0 +1,21 @@
+{
+  "id": "normal-rsa",
+  "input": {
+    "algorithm": "rsa",
+    "p": 7,
+    "q": 19,
+    "e": 5,
+    "message": 36
+  },
+  "actual": {
+    "status": "ok",
+    "result": {
+      "n": 133,
+      "d": 65,
+      "ciphertext": 120,
+      "recovered": 36
+    }
+  },
+  "exit_code": 0,
+  "expected_exit": 0
+}

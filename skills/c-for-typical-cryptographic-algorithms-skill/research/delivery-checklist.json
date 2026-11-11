@@ -1,0 +1,43 @@
+{
+  "workflow": "2.0.0",
+  "version": "1.0.0",
+  "upstream_gate": "passed",
+  "items": [
+    {
+      "item": "13章描述与实现复核",
+      "evidence": "research/review-2.0",
+      "status": "passed"
+    },
+    {
+      "item": "旧候选守恒及新三能力契约",
+      "evidence": "research/capabilities/catalog.json",
+      "status": "passed"
+    },
+    {
+      "item": "七类精确运算新输入/边界",
+      "evidence": "evaluation/reports/exact-agent-review.json",
+      "status": "passed"
+    },
+    {
+      "item": "限定C核",
+      "evidence": "evaluation/reports/c-audit.json",
+      "status": "passed"
+    },
+    {
+      "item": "来源语义/路由",
+      "evidence": "evaluation/reports/source-review-agent.json",
+      "status": "passed"
+    },
+    {
+      "item": "完整包隔离执行/模型实际答复",
+      "evidence": "evaluation/reports/package-acceptance.json",
+      "status": "passed"
+    }
+  ],
+  "excluded": [
+    "complete original CD project",
+    "global installation",
+    "production security",
+    "measured optimization speedup"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "execution_mode": "actual_execution",
+  "python": "default task python",
+  "oracle": "cryptography 49.0.0",
+  "des": {
+    "key": "1a2b3c4d5e6f7081",
+    "plaintext": "63616e676a693230",
+    "ciphertext": "ad9d3dc9ea5be9f8",
+    "correct_decrypt": "63616e676a693230",
+    "wrong_initial_fp_decrypt": "698e9b0069f17b60",
+    "passed": true
+  },
+  "aes": {
+    "key": "134b507c9aa2d8e1fe2735416980b6cd",
+    "plaintext": "000306090c0f1215181b1e2124272a2d",
+    "standard_ciphertext": "0950f71085f5a1aa96f6e9aa20e083d2",
+    "only_endpoint_transposition_ciphertext": "0e9f463dab67ea72aac6960b9f29e41e",
+    "passed": true
+  },
+  "limitations": [
+    "Tables from frozen book transcription; library provides independent implementation oracle.",
+    "AES example models endpoint-only transposition while retaining internal transforms and expanded-key layout.",
+    "No book C/C++ source compilation; no global host loading claim."
+  ],
+  "script_sha256": "9006bd31fe98ae01d83096e1b597ffca2830f15e970d3d521ee0d3b3e24aa9eb"
+}

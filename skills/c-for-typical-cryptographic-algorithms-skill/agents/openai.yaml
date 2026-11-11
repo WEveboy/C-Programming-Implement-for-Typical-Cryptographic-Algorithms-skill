@@ -1,0 +1,6 @@
+interface:
+  display_name: "C for typical cryptographic algorithms skill"
+  short_description: "逐章来源与纠错驱动的C密码算法研读、精确复算、移植审查及等价优化验证"
+  default_prompt: "使用 $c-for-typical-cryptographic-algorithms-skill 分析给定算法的描述与C实现，并复算一个新实例。"
+policy:
+  allow_implicit_invocation: true

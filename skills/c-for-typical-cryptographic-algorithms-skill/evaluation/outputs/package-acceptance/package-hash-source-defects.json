@@ -1,0 +1,653 @@
+{
+  "schema_version": 1,
+  "execution_mode": "actual_execution_of_python_fragment_models",
+  "scope": "Book p.206 BLAKE Update byte-buffer path and p.216 JH first padding block; no compression/hash output or original C execution",
+  "input_plan": {
+    "blake": [
+      {
+        "id": "b-1-63",
+        "chunks": [
+          "a5",
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e"
+        ],
+        "source_defect": false
+      },
+      {
+        "id": "b-1-64",
+        "chunks": [
+          "a5",
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "source_defect": true
+      },
+      {
+        "id": "b-63-1",
+        "chunks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e",
+          "a5"
+        ],
+        "source_defect": false
+      },
+      {
+        "id": "b-1-empty",
+        "chunks": [
+          "a5",
+          ""
+        ],
+        "source_defect": true
+      },
+      {
+        "id": "b-empty-64",
+        "chunks": [
+          "",
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "source_defect": false
+      },
+      {
+        "id": "b-2-128",
+        "chunks": [
+          "a5b6",
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f"
+        ],
+        "source_defect": true
+      },
+      {
+        "id": "b-63-65",
+        "chunks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e",
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40"
+        ],
+        "source_defect": false
+      },
+      {
+        "id": "b-64-1",
+        "chunks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+          "a5"
+        ],
+        "source_defect": false
+      }
+    ],
+    "jh": [
+      {
+        "id": "j-1-0",
+        "bits": "0",
+        "source_defect": false
+      },
+      {
+        "id": "j-1-1",
+        "bits": "1",
+        "source_defect": true
+      },
+      {
+        "id": "j-2-0",
+        "bits": "00",
+        "source_defect": false
+      },
+      {
+        "id": "j-2-1",
+        "bits": "11",
+        "source_defect": true
+      },
+      {
+        "id": "j-3-0",
+        "bits": "000",
+        "source_defect": false
+      },
+      {
+        "id": "j-3-1",
+        "bits": "111",
+        "source_defect": true
+      },
+      {
+        "id": "j-4-0",
+        "bits": "0000",
+        "source_defect": false
+      },
+      {
+        "id": "j-4-1",
+        "bits": "1111",
+        "source_defect": true
+      },
+      {
+        "id": "j-5-0",
+        "bits": "00000",
+        "source_defect": false
+      },
+      {
+        "id": "j-5-1",
+        "bits": "11111",
+        "source_defect": true
+      },
+      {
+        "id": "j-6-0",
+        "bits": "000000",
+        "source_defect": false
+      },
+      {
+        "id": "j-6-1",
+        "bits": "111111",
+        "source_defect": true
+      },
+      {
+        "id": "j-7-0",
+        "bits": "0000000",
+        "source_defect": false
+      },
+      {
+        "id": "j-7-1",
+        "bits": "1111111",
+        "source_defect": true
+      },
+      {
+        "id": "j-boundary-0",
+        "bits": "",
+        "source_defect": false
+      },
+      {
+        "id": "j-boundary-8",
+        "bits": "11111111",
+        "source_defect": false
+      },
+      {
+        "id": "j-boundary-9",
+        "bits": "111111111",
+        "source_defect": true
+      },
+      {
+        "id": "j-boundary-15",
+        "bits": "111111111111111",
+        "source_defect": true
+      },
+      {
+        "id": "j-boundary-511",
+        "bits": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+        "source_defect": true
+      },
+      {
+        "id": "j-boundary-512",
+        "bits": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+        "source_defect": false
+      }
+    ]
+  },
+  "input_plan_sha256": "4cbc22a239fc275bd9e2cb8901cca508a0675c36fe8a5e6e3561b2b5adf7f18f",
+  "script_sha256": "d3df1b58873a6b8f09a36601737d597b03f43f31422b1c3458b161ff1c95b836",
+  "planned": 28,
+  "completed": 28,
+  "passed": 28,
+  "source_defects_demonstrated": 13,
+  "results": [
+    {
+      "id": "b-1-63",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [
+          "a5000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e"
+        ],
+        "pending": ""
+      },
+      "revised": {
+        "blocks": [
+          "a5000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e"
+        ],
+        "pending": ""
+      },
+      "expected": {
+        "blocks": [
+          "a5000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e"
+        ],
+        "pending": ""
+      },
+      "passed": true
+    },
+    {
+      "id": "b-1-64",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "pending": ""
+      },
+      "revised": {
+        "blocks": [
+          "a5000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e"
+        ],
+        "pending": "3f"
+      },
+      "expected": {
+        "blocks": [
+          "a5000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e"
+        ],
+        "pending": "3f"
+      },
+      "passed": true
+    },
+    {
+      "id": "b-63-1",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3ea5"
+        ],
+        "pending": ""
+      },
+      "revised": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3ea5"
+        ],
+        "pending": ""
+      },
+      "expected": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3ea5"
+        ],
+        "pending": ""
+      },
+      "passed": true
+    },
+    {
+      "id": "b-1-empty",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [],
+        "pending": ""
+      },
+      "revised": {
+        "blocks": [],
+        "pending": "a5"
+      },
+      "expected": {
+        "blocks": [],
+        "pending": "a5"
+      },
+      "passed": true
+    },
+    {
+      "id": "b-empty-64",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "pending": ""
+      },
+      "revised": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "pending": ""
+      },
+      "expected": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "pending": ""
+      },
+      "passed": true
+    },
+    {
+      "id": "b-2-128",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+          "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f"
+        ],
+        "pending": ""
+      },
+      "revised": {
+        "blocks": [
+          "a5b6000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d",
+          "3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d"
+        ],
+        "pending": "7e7f"
+      },
+      "expected": {
+        "blocks": [
+          "a5b6000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d",
+          "3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d"
+        ],
+        "pending": "7e7f"
+      },
+      "passed": true
+    },
+    {
+      "id": "b-63-65",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e00",
+          "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40"
+        ],
+        "pending": ""
+      },
+      "revised": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e00",
+          "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40"
+        ],
+        "pending": ""
+      },
+      "expected": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e00",
+          "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40"
+        ],
+        "pending": ""
+      },
+      "passed": true
+    },
+    {
+      "id": "b-64-1",
+      "family": "blake-update-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "pending": "a5"
+      },
+      "revised": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "pending": "a5"
+      },
+      "expected": {
+        "blocks": [
+          "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+        ],
+        "pending": "a5"
+      },
+      "passed": true
+    },
+    {
+      "id": "j-1-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-1-1",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-2-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-2-1",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-3-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-3-1",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-4-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "08000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "08000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "08000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-4-1",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "08000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "f8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-5-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "04000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "04000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "04000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-5-1",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "04000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "fc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "fc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-6-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-6-1",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "fe000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "fe000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-7-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-7-1",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "01000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-boundary-0",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-boundary-8",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "ff800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "ff800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "ff800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-boundary-9",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "ff400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "ffc00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "ffc00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-boundary-15",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "ff010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "ffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "ffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "id": "j-boundary-511",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": false,
+      "expected_source_defect": true,
+      "revised_matches_invariant": true,
+      "source": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff01",
+      "revised": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "expected": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "passed": true
+    },
+    {
+      "id": "j-boundary-512",
+      "family": "jh-padding-fragment",
+      "source_matches_invariant": true,
+      "expected_source_defect": false,
+      "revised_matches_invariant": true,
+      "source": "80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "revised": "80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "expected": "80000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    }
+  ],
+  "jh_collision_checks": [
+    {
+      "bits": 1,
+      "source_collides": true,
+      "revised_distinct": true
+    },
+    {
+      "bits": 2,
+      "source_collides": true,
+      "revised_distinct": true
+    },
+    {
+      "bits": 3,
+      "source_collides": true,
+      "revised_distinct": true
+    },
+    {
+      "bits": 4,
+      "source_collides": true,
+      "revised_distinct": true
+    },
+    {
+      "bits": 5,
+      "source_collides": true,
+      "revised_distinct": true
+    },
+    {
+      "bits": 6,
+      "source_collides": true,
+      "revised_distinct": true
+    },
+    {
+      "bits": 7,
+      "source_collides": true,
+      "revised_distinct": true
+    }
+  ],
+  "limitations": [
+    "Source/revised data-path models are independently compared to byte-stream/bit-string invariants, not full BLAKE/JH KATs.",
+    "No claim of production readiness, complete source recovery, or hash cryptanalysis.",
+    "The JH model does not execute F8, the second length block, or streaming Update."
+  ]
+}

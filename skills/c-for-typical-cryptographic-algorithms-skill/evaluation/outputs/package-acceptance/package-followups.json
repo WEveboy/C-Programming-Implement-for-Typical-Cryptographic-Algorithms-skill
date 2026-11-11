@@ -1,0 +1,121 @@
+{
+  "scope": "supplemental MH book instance and synthetic sign-plus identity; no security claim",
+  "input_sha256": "a663e01eecee852b3f73f57bd39898ad25b7d1800874107c02437781ec938c6e",
+  "script_sha256": "fb22db0677f3f9aa5660f6b03022d079f72216d273cbd6b934321d6eafb29a6d",
+  "checks": 10,
+  "passed": 10,
+  "results": [
+    {
+      "id": "mh-superincreasing",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "mh-modulus-bound",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "mh-inverse",
+      "actual": 505333,
+      "expected": 505333,
+      "passed": true
+    },
+    {
+      "id": "mh-public-all16",
+      "actual": [
+        54370,
+        76118,
+        212043,
+        369716,
+        160801,
+        381409,
+        167876,
+        379248,
+        130932,
+        250990,
+        550913,
+        496010,
+        429700,
+        351450,
+        129706,
+        270286
+      ],
+      "expected": [
+        54370,
+        76118,
+        212043,
+        369716,
+        160801,
+        381409,
+        167876,
+        379248,
+        130932,
+        250990,
+        550913,
+        496010,
+        429700,
+        351450,
+        129706,
+        270286
+      ],
+      "passed": true
+    },
+    {
+      "id": "mh-cipher",
+      "actual": "1751a2",
+      "expected": "1751a2",
+      "passed": true
+    },
+    {
+      "id": "mh-decode",
+      "actual": {
+        "bits": "0110001001100001",
+        "remaining": 0
+      },
+      "expected": {
+        "bits": "0110001001100001",
+        "remaining": 0
+      },
+      "passed": true
+    },
+    {
+      "id": "signature-synthetic",
+      "actual": {
+        "r": 7,
+        "s": 3
+      },
+      "expected": {
+        "r": 7,
+        "s": 3
+      },
+      "passed": true
+    },
+    {
+      "id": "signature-equation",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "id": "signature-invalid-k",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "id": "signature-all40-valid-small-inputs",
+      "actual": {
+        "count": 40,
+        "all_valid": true
+      },
+      "expected": {
+        "count": 40,
+        "all_valid": true
+      },
+      "passed": true
+    }
+  ]
+}

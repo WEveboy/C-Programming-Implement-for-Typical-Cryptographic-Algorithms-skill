@@ -1,0 +1,10 @@
+private/
+tmp/
+__pycache__/
+*.pyc
+*.exe
+logs/
+project.yaml
+PIPELINE_STATE.md
+publication/local-*
+public-staging/

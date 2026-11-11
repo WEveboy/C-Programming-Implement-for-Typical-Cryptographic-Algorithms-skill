@@ -1,0 +1,13 @@
+{
+  "total": 58,
+  "decisions": {
+    "verified": 7,
+    "reference": 49,
+    "needs_review": 0,
+    "rejected": 2
+  },
+  "active_capabilities": 0,
+  "conservation_passed": true,
+  "tasks": 34,
+  "algorithms": 17
+}
