@@ -1,0 +1,7 @@
+{
+  "workflow": "文本蒸馏2.0",
+  "version": "2.0.0",
+  "sha256": "feb18d6b49780bff8e55aa82c4ece59e596476ea0ce58e3ef2f3c6fe518d082c",
+  "conversation_title": "文本蒸馏2.0",
+  "read": true
+}

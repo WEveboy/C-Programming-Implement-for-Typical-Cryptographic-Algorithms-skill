@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "stage": "H",
+  "timestamp": "2026-11-11T12:18:03.391119+08:00",
+  "execution_mode": "explicit_file_load_and_model_execution_with_actual_packaged_tools",
+  "package_source": "public-staging/skills/c-for-typical-cryptographic-algorithms-skill",
+  "isolated_copy": "tmp/package-acceptance",
+  "source_file_count": 68,
+  "commands": [
+    {
+      "id": "exact",
+      "command": [
+        "python",
+        "scripts/test_exact_instances.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 60.14,
+      "stdout": "evaluation/outputs/package-acceptance/exact.stdout.txt",
+      "stderr": "evaluation/outputs/package-acceptance/exact.stderr.txt"
+    },
+    {
+      "id": "c-audit",
+      "command": [
+        "python",
+        "scripts/run_c_audit.py",
+        "--cc",
+        "gcc"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.203,
+      "stdout": "evaluation/outputs/package-acceptance/c-audit.stdout.txt",
+      "stderr": "evaluation/outputs/package-acceptance/c-audit.stderr.txt",
+      "scope": "dependency import failed; zero C checks executed in this attempt"
+    },
+    {
+      "id": "hash-source-defects",
+      "command": [
+        "python",
+        "scripts/test_hash_source_defects.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.188,
+      "stdout": "evaluation/outputs/package-acceptance/hash-source-defects.stdout.txt",
+      "stderr": "evaluation/outputs/package-acceptance/hash-source-defects.stderr.txt"
+    },
+    {
+      "id": "witnesses",
+      "command": [
+        "python",
+        "scripts/verify_witnesses.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.219,
+      "stdout": "evaluation/outputs/package-acceptance/witnesses.stdout.txt",
+      "stderr": "evaluation/outputs/package-acceptance/witnesses.stderr.txt"
+    },
+    {
+      "id": "followups",
+      "command": [
+        "python",
+        "scripts/verify_followups.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.171,
+      "stdout": "evaluation/outputs/package-acceptance/followups.stdout.txt",
+      "stderr": "evaluation/outputs/package-acceptance/followups.stderr.txt"
+    },
+    {
+      "id": "constants",
+      "command": [
+        "python",
+        "scripts/audit_constants.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.204,
+      "stdout": "evaluation/outputs/package-acceptance/constants.stdout.txt",
+      "stderr": "evaluation/outputs/package-acceptance/constants.stderr.txt"
+    },
+    {
+      "id": "c-audit-retry",
+      "command": [
+        "system-python",
+        "scripts/run_c_audit.py",
+        "--cc",
+        "gcc"
+      ],
+      "python": "3.14.6",
+      "cryptography": "49.0.0",
+      "exit_code": 0,
+      "reason": "Use existing interpreter with declared oracle dependency; original missing-module attempt retained",
+      "evidence": "evaluation/outputs/package-acceptance/package-c-audit.json"
+    }
+  ],
+  "task_tool_runs": [
+    {
+      "id": "normal-rsa",
+      "input": {
+        "algorithm": "rsa",
+        "p": 7,
+        "q": 19,
+        "e": 5,
+        "message": 36
+      },
+      "actual": {
+        "status": "ok",
+        "result": {
+          "n": 133,
+          "d": 65,
+          "ciphertext": 120,
+          "recovered": 36
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "id": "invalid-paillier",
+      "input": {
+        "algorithm": "paillier",
+        "p": 7,
+        "q": 11,
+        "g": 5652,
+        "message": 42,
+        "r": 42
+      },
+      "actual": {
+        "status": "rejected",
+        "reason": "r/g must be units"
+      },
+      "exit_code": 2,
+      "expected_exit": 2
+    }
+  ],
+  "package_private_pdf_ocr_required": false,
+  "global_installation": false,
+  "host_automatic_discovery": "not_tested",
+  "model": "inherited agent; exact model identifier unavailable",
+  "model_answers": [
+    {
+      "id": "normal-rsa",
+      "output": "evaluation/outputs/package-acceptance/normal-rsa.md",
+      "sha256": "dc2d58477c89fd22daa8ce10ea4663498a59f1163fa6e593c690ae8162c04466",
+      "semantic_assessment": "passed by inspecting actual answer against copied skill contract"
+    },
+    {
+      "id": "invalid-paillier",
+      "output": "evaluation/outputs/package-acceptance/invalid-paillier.md",
+      "sha256": "c3c9f0b914ff8d80ae7a5c985ebcb941b3406b74486bff2c3e62d37806ecc96c",
+      "semantic_assessment": "passed by inspecting actual answer against copied skill contract"
+    },
+    {
+      "id": "string-sort",
+      "output": "evaluation/outputs/package-acceptance/string-sort.md",
+      "sha256": "a25d4a3e4be76b1082afc0c393903692c5de01003626223caafd1891b62fcc55",
+      "semantic_assessment": "passed by inspecting actual answer against copied skill contract"
+    }
+  ],
+  "counts": {
+    "exact": {
+      "planned": 337,
+      "completed": 337,
+      "passed": 337
+    },
+    "c_audit": {
+      "total_checks": 864,
+      "passed": 864,
+      "runs": [
+        {
+          "optimization": "-O0",
+          "tests": 432,
+          "passed": 432
+        },
+        {
+          "optimization": "-O2",
+          "tests": 432,
+          "passed": 432
+        }
+      ]
+    },
+    "hash_models": {
+      "planned": 28,
+      "completed": 28,
+      "passed": 28,
+      "source_defects_demonstrated": 13
+    },
+    "witnesses": {
+      "planned": 40,
+      "completed": 40,
+      "assertions_passed": 38,
+      "unexpected_failures": [],
+      "known_source_mismatches": [
+        "paillier-book-r42",
+        "sm2-book-shared-point"
+      ]
+    },
+    "followups": {
+      "passed": 10,
+      "checks": 10
+    },
+    "constants": {
+      "passed": 19,
+      "checks": 19
+    }
+  },
+  "reference_update": {
+    "reason": "Parent reference and entrypoint update after copy; executable resources unchanged",
+    "synchronized_paths": [
+      "SKILL.md",
+      "agents/openai.yaml",
+      "docs/ALGORITHM_CONTRACTS.md",
+      "docs/AUDIT_REPORT_V02.md",
+      "docs/C_IMPLEMENTATION_PLAN.md",
+      "evaluation/REVISION_LOG.md",
+      "reference-c/README.md",
+      "research/BOOK_OVERVIEW.md",
+      "research/CODE_REVIEW.md",
+      "research/CONSTANT_REVIEW.md",
+      "research/coverage-audit.md",
+      "research/DIGEST.md",
+      "research/GLOSSARY.md",
+      "research/needs-review.md",
+      "research/references.md",
+      "research/rejected.md",
+      "research/SOURCE_CORRECTIONS.md",
+      "research/SOURCE_MANIFEST.json",
+      "research/tasks.csv",
+      "research/verified.md",
+      "docs/chapters/01-zuc.md",
+      "docs/chapters/02-des.md",
+      "docs/chapters/03-aes.md",
+      "docs/chapters/04-sm4.md",
+      "docs/chapters/05-mh.md",
+      "docs/chapters/06-rsa.md",
+      "docs/chapters/07-paillier.md",
+      "docs/chapters/08-ntru.md",
+      "docs/chapters/09-elgamal.md",
+      "docs/chapters/10-ecc.md",
+      "docs/chapters/11-sm2.md",
+      "docs/chapters/12-mceliece.md",
+      "docs/chapters/13-hash.md",
+      "evaluation/outputs/source-review/01-aes-layout.md",
+      "evaluation/outputs/source-review/02-des-ingress.md",
+      "evaluation/outputs/source-review/03-sm2-incomplete.md",
+      "evaluation/outputs/source-review/04-string-sort.md",
+      "evaluation/outputs/source-review/05-missing-parameters.md",
+      "evaluation/outputs/source-review/REVISION_LOG.md",
+      "references/capabilities/c-equivalence.md",
+      "references/capabilities/catalog.json",
+      "references/capabilities/exact-instances.md",
+      "references/capabilities/source-review.md",
+      "research/candidates/ledger.jsonl",
+      "research/candidates/summary.json",
+      "research/constants/des-tables.json",
+      "research/constants/hash-version-tables.json",
+      "research/constants/sboxes.json",
+      "research/constants/sm4-rounds.json",
+      "research/review-2.0/01-04.md",
+      "research/review-2.0/05-09.md",
+      "research/review-2.0/10-13.md"
+    ],
+    "executable_resources": [
+      {
+        "path": "reference-c/audit_cli.c",
+        "equal": true
+      },
+      {
+        "path": "reference-c/constants.h",
+        "equal": true
+      },
+      {
+        "path": "scripts/audit_constants.py",
+        "equal": true
+      },
+      {
+        "path": "scripts/exact_instance.py",
+        "equal": true
+      },
+      {
+        "path": "scripts/generate_constant_header.py",
+        "equal": true
+      },
+      {
+        "path": "scripts/run_c_audit.py",
+        "equal": true
+      },
+      {
+        "path": "scripts/test_exact_instances.py",
+        "equal": true
+      },
+      {
+        "path": "scripts/test_hash_source_defects.py",
+        "equal": true
+      },
+      {
+        "path": "scripts/verify_followups.py",
+        "equal": true
+      },
+      {
+        "path": "scripts/verify_witnesses.py",
+        "equal": true
+      }
+    ],
+    "test_plan_semantically_identical": true,
+    "test_plan_newline_difference": "published LF versus execution-written CRLF; unchanged JSON inputs and expected values"
+  },
+  "source_unchanged_by_evaluator": true,
+  "model_execution_scope": "Same evaluation agent explicitly read copied SKILL.md, exact-instances card and relevant chapters then generated actual answers; not an automatic-discovery test, new isolated model process, or blinded with/without comparison",
+  "validation": {
+    "command": [
+      "python",
+      "scripts/validate_package.py",
+      "tmp/package-acceptance-validation"
+    ],
+    "exit_code": 0,
+    "relative_links": 104,
+    "cards": 3,
+    "failures": [],
+    "scope": "Clean resource clone excluding execution-created tmp binaries and caches; updated references and executable hash equality checked"
+  },
+  "acceptance_status": "passed for explicit file loading, packaged tools and three model routing/output tasks",
+  "limitations": [
+    "Global installation and host automatic discovery not tested",
+    "Exact/script checks do not prove full cryptographic schemes, source completeness or side-channel safety",
+    "40 legacy witness assertions retain two documented source mismatches",
+    "C first attempt failed missing dependency; successful system-Python retry is separately recorded"
+  ],
+  "post_evaluation_normalization": {
+    "change": "test_exact_instances.py writes frozen plan and report with explicit LF rather than Windows default CRLF",
+    "core_subject_changed": false,
+    "tests_changed": false,
+    "isolated_execution_snapshot": "Pre-normalization test harness; all 337 actual outputs retained",
+    "final_public_hash_binding": "Parent reruns normalized harness and verifies subject/test_script/plan against final publication; this report does not substitute for that binding"
+  }
+}

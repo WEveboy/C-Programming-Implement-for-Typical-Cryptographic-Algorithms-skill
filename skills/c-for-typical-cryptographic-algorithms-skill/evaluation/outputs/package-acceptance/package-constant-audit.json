@@ -1,0 +1,109 @@
+{
+  "scope": "algebraic and shape checks; source visual review is separate",
+  "checks": 19,
+  "passed": 19,
+  "results": [
+    {
+      "id": "zuc_s0-permutation",
+      "elements": 256,
+      "passed": true
+    },
+    {
+      "id": "zuc_s1-permutation",
+      "elements": 256,
+      "passed": true
+    },
+    {
+      "id": "aes_s-permutation",
+      "elements": 256,
+      "passed": true
+    },
+    {
+      "id": "aes_inv-permutation",
+      "elements": 256,
+      "passed": true
+    },
+    {
+      "id": "sm4_s-permutation",
+      "elements": 256,
+      "passed": true
+    },
+    {
+      "id": "aes-s-algebraic",
+      "elements": 256,
+      "passed": true
+    },
+    {
+      "id": "aes-inverse-composition",
+      "elements": 256,
+      "passed": true
+    },
+    {
+      "id": "aes-mix-inverse",
+      "elements": 16,
+      "passed": true
+    },
+    {
+      "id": "des-ip-fp",
+      "elements": 64,
+      "passed": true
+    },
+    {
+      "id": "des-pc1-parity",
+      "elements": 56,
+      "passed": true
+    },
+    {
+      "id": "des-pc2-unique",
+      "elements": 48,
+      "passed": true
+    },
+    {
+      "id": "des-p-permutation",
+      "elements": 32,
+      "passed": true
+    },
+    {
+      "id": "des-shift-total",
+      "elements": 16,
+      "passed": true
+    },
+    {
+      "id": "des-s-row-permutations",
+      "elements": 512,
+      "passed": true
+    },
+    {
+      "id": "blake-sigma-permutations",
+      "elements": 160,
+      "passed": true
+    },
+    {
+      "id": "skein-permutation-4",
+      "elements": 4,
+      "passed": true
+    },
+    {
+      "id": "skein-permutation-8",
+      "elements": 8,
+      "passed": true
+    },
+    {
+      "id": "skein-permutation-16",
+      "elements": 16,
+      "passed": true
+    },
+    {
+      "id": "skein-old-rotation-range",
+      "elements": 112,
+      "passed": true
+    }
+  ],
+  "input_sha256": {
+    "research/constants/des-tables.json": "7fb2be896aaa57ca5e54ef9650f4145dd737872ecd6a509ca1b1d9960b3ea9e7",
+    "research/constants/hash-version-tables.json": "8f8e68d5134ad2362cebf0e4b71a30726878782625458562c7d51d13ee98fd40",
+    "research/constants/sboxes.json": "d62794e29844ebdefb80a307bd3c175198a6e17688cbc5c18e03b6c797584333",
+    "research/constants/sm4-rounds.json": "b283d8ed5ffca75c1ef0305729a07e23ca358e4545034d2fe49021bc4d24fba6"
+  },
+  "script_sha256": "dce5e2b7b4d9ae578f9045ea17d0bfac230126923139c9b7a8b3f88925f4f180"
+}

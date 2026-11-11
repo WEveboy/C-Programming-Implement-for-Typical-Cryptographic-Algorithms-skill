@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "capability_id": "C01",
+  "evaluator": "independent child-agent context; model identifier unavailable",
+  "reviewed_at": "2026-11-11T12:14:33.872011+08:00",
+  "planned": 5,
+  "completed": 5,
+  "route_passed": 5,
+  "semantic_passed": 5,
+  "boundary_passed": 5,
+  "strict_automated_assertions": {
+    "planned": 2,
+    "completed": 2,
+    "passed": 2,
+    "scope": "AES endpoint transpose mismatch and DES wrong-ingress mismatch; both include independent library result comparison"
+  },
+  "cases": [
+    {
+      "case_id": "C01-01",
+      "output_path": "evaluation/outputs/source-review/01-aes-layout.md",
+      "output_sha256": "22e78ab799beae76f47efcb8d64f71176cdc858cb580e8f36f8da8d8ea49ec8c",
+      "execution_mode": "model_response",
+      "route_result": "pass",
+      "semantic_result": "pass",
+      "boundary_result": "pass",
+      "criteria": [
+        {
+          "criterion": "Distinguishes round-trip from AES byte compatibility",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Requires simultaneous internal/key-layout transformation",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Provides actual new distinguishing ciphertext",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        }
+      ]
+    },
+    {
+      "case_id": "C01-02",
+      "output_path": "evaluation/outputs/source-review/02-des-ingress.md",
+      "output_sha256": "368fbe67a2817497441d67d342fe3671bcaaf24c7d37238978401a36c12a91ed",
+      "execution_mode": "model_response",
+      "route_result": "pass",
+      "semantic_result": "pass",
+      "boundary_result": "pass",
+      "criteria": [
+        {
+          "criterion": "Uses IP at DES decryption ingress",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Explains inverse composition and reverse key order",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Provides actual wrong-ingress counterexample",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        }
+      ]
+    },
+    {
+      "case_id": "C01-03",
+      "output_path": "evaluation/outputs/source-review/03-sm2-incomplete.md",
+      "output_sha256": "b5cc51236e996d0aae7b063eeedb84c35c65209ebc01a4f3c2b0ad0d76ebac08",
+      "execution_mode": "model_response",
+      "route_result": "pass",
+      "semantic_result": "pass",
+      "boundary_result": "pass",
+      "criteria": [
+        {
+          "criterion": "Does not equate curve point arithmetic with complete SM2",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Identifies KDF/C2/C3 and authentication failure path",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Does not infer missing disc implementation",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        }
+      ]
+    },
+    {
+      "case_id": "C01-04",
+      "output_path": "evaluation/outputs/source-review/04-string-sort.md",
+      "output_sha256": "9e309f3ca20a140bb517ee294281bfa48c87a7d21d4b6da7545c03824f113025",
+      "execution_mode": "model_response",
+      "route_result": "pass",
+      "semantic_result": "pass",
+      "boundary_result": "pass",
+      "criteria": [
+        {
+          "criterion": "Does not activate cryptographic source-review for ordinary sorting",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Answers ordinary task without cryptographic detour",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Does not claim code compiled",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        }
+      ]
+    },
+    {
+      "case_id": "C01-05",
+      "output_path": "evaluation/outputs/source-review/05-missing-parameters.md",
+      "output_sha256": "cc478983101f948de02e0dcb9c9929bb4177930eff068777a6896076afcbf12c",
+      "execution_mode": "model_response",
+      "route_result": "pass",
+      "semantic_result": "pass",
+      "boundary_result": "pass",
+      "criteria": [
+        {
+          "criterion": "Does not guess unknown algorithm or performance",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Identifies minimum missing inputs and preserved contracts",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        },
+        {
+          "criterion": "Defers measured speedup until actual execution",
+          "judgment": "pass",
+          "method": "semantic self-score of generated response"
+        }
+      ]
+    }
+  ],
+  "input_snapshots": {
+    "research/SKILL.source.md": "c61f87ed85c23d14abb256922fe3105830bbdcbd108b7e7fff445ef3d37a919f",
+    "research/capabilities/source-review.md": "e8dd1f97edee309227f69dd0a838bac257d0c169e4834f7b320a5f3b146bc297",
+    "docs/chapters/02-des.md": "252b127435fac3fa42881d3fa3c436429c6e24426234468f3877f0a1e9569308",
+    "docs/chapters/03-aes.md": "56e1eefeae13abb314850cdf0311b7ea665d745992232655207ce2b93f1d0c8f",
+    "docs/chapters/11-sm2.md": "d34fc9e23d3ab71e1a8311fd717b1dcdae123e0c9ed0b5f5397766f5219876fe",
+    "research/constants/des-tables.json": "7fb2be896aaa57ca5e54ef9650f4145dd737872ecd6a509ca1b1d9960b3ea9e7"
+  },
+  "numeric_evidence": "evaluation/outputs/source-review/distinguishing-results.json",
+  "numeric_script": "evaluation/outputs/source-review/distinguishing_examples.py",
+  "failure_revision_log": "evaluation/outputs/source-review/REVISION_LOG.md",
+  "blind_evaluation": false,
+  "without_skill_control": false,
+  "global_installation_tested": false,
+  "host_auto_discovery_tested": false,
+  "book_source_compilations": 0,
+  "limitations": [
+    "Behavior responses are independent-context semantic exercises, not answer-isolated blinded assessment.",
+    "Agent generated and self-scored its own five responses; numeric oracle is separate library implementation.",
+    "No with/without skill performance improvement claim."
+  ]
+}

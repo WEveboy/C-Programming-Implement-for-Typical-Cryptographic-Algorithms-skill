@@ -1,0 +1,5570 @@
+{
+  "schema_version": 1,
+  "execution_mode": "actual_execution",
+  "scope": "Independent finite arithmetic and CLI type/domain/budget rejection; not full cryptographic schemes or host loading.",
+  "planned": 337,
+  "completed": 337,
+  "passed": 337,
+  "subject_sha256": "5ca15e60f34170fc1fe6395cec4e44f79887818d294e661b46cdf7e70b0c09b7",
+  "test_script_sha256": "7a5c3ce3e81883283a597f30e85847b395b8320a73c614f2e0c964a2f6d66029",
+  "frozen_plan_sha256": "0adce0ef6c7ba553c11885b04a00e9e056ba448231c41ea6ef75b14cebb14b5e",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "results": [
+    {
+      "id": "rsa-new-normal",
+      "kind": "normal-new-input",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "n": 55,
+          "d": 27,
+          "ciphertext": 13,
+          "recovered": 7
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "n": 55,
+          "d": 27,
+          "ciphertext": 13,
+          "recovered": 7
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-p-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-p-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-p-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-p-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-p-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-p-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-q-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-q-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-q-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-q-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-q-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-q-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-e-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "e: integer outside [2, 39]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-e-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "e: integer outside [2, 39]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-e-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "e: integer outside [2, 39]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-e-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "e: integer outside [2, 39]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-e-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "e: integer outside [2, 39]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-e-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "e: integer outside [2, 39]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-message-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 54]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-message-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 54]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-message-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 54]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-message-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 54]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-message-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 54]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-message-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 54]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-missing-p",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'p'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-missing-q",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'q'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-missing-e",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'e'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-missing-message",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'message'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-new-normal",
+      "kind": "normal-new-input",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "n": 15,
+          "ciphertext": 83,
+          "recovered": 7
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "n": 15,
+          "ciphertext": 83,
+          "recovered": 7
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-p-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-p-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-p-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-p-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-p-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-p-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-q-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-q-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-q-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-q-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-q-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-q-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-g-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [1, 224]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-g-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [1, 224]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-g-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [1, 224]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-g-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [1, 224]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-g-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [1, 224]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-g-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [1, 224]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-message-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-message-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-message-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-message-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-message-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-message-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-r-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "r: integer outside [1, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-r-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "r: integer outside [1, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-r-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "r: integer outside [1, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-r-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "r: integer outside [1, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-r-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "r: integer outside [1, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-r-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "r: integer outside [1, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-missing-p",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'p'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-missing-q",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'q'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-default-g",
+      "kind": "optional-field",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "n": 15,
+          "ciphertext": 83,
+          "recovered": 7
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "n": 15,
+          "ciphertext": 83,
+          "recovered": 7
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-missing-message",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'message'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-missing-r",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'r'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-new-normal",
+      "kind": "normal-new-input",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "public": [
+            6,
+            15,
+            33,
+            22
+          ],
+          "ciphertext": 61,
+          "recovered": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "remaining": 0
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "public": [
+            6,
+            15,
+            33,
+            22
+          ],
+          "ciphertext": 61,
+          "recovered": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "remaining": 0
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-private-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-modulus-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "modulus: integer outside [2, 18446744073709551615]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-modulus-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "modulus: integer outside [2, 18446744073709551615]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-modulus-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "modulus: integer outside [2, 18446744073709551615]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-modulus-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "modulus: integer outside [2, 18446744073709551615]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-modulus-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "modulus: integer outside [2, 18446744073709551615]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-modulus-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "modulus: integer outside [2, 18446744073709551615]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-multiplier-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "multiplier: integer outside [1, 46]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-multiplier-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "multiplier: integer outside [1, 46]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-multiplier-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "multiplier: integer outside [1, 46]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-multiplier-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "multiplier: integer outside [1, 46]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-multiplier-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "multiplier: integer outside [1, 46]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-multiplier-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "multiplier: integer outside [1, 46]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-bits-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-missing-private",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'private'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-missing-modulus",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'modulus'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-missing-multiplier",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'multiplier'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-missing-bits",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'bits'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-new-normal",
+      "kind": "normal-new-input",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "public": 8,
+          "ciphertext": [
+            17,
+            2
+          ],
+          "recovered": 4
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "public": 8,
+          "ciphertext": [
+            17,
+            2
+          ],
+          "recovered": 4
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-p-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-p-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-p-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-p-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-p-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-p-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-g-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [2, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-g-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [2, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-g-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [2, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-g-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [2, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-g-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [2, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-g-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "g: integer outside [2, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-private-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "private: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-private-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "private: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-private-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "private: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-private-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "private: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-private-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "private: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-private-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "private: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-nonce-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "nonce: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-nonce-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "nonce: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-nonce-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "nonce: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-nonce-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "nonce: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-nonce-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "nonce: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-nonce-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "nonce: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-message-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [1, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-message-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [1, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-message-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [1, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-message-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [1, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-message-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [1, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-message-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [1, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-missing-p",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'p'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-missing-g",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'g'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-missing-private",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'private'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-missing-nonce",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'nonce'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-missing-message",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'message'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-new-normal",
+      "kind": "normal-new-input",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "point": [
+            10,
+            6
+          ]
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "point": [
+            10,
+            6
+          ]
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-p-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-p-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-p-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-p-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-p-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-p-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-a-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "a: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-a-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "a: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-a-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "a: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-a-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "a: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-a-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "a: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-a-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "a: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-b-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "b: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-b-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "b: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-b-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "b: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-b-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "b: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-b-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "b: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-b-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "b: integer outside [0, 16]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-point-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-scalar-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "scalar: integer outside [0, 4294967295]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-scalar-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "scalar: integer outside [0, 4294967295]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-scalar-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "scalar: integer outside [0, 4294967295]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-scalar-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "scalar: integer outside [0, 4294967295]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-scalar-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "scalar: integer outside [0, 4294967295]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-scalar-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "scalar: integer outside [0, 4294967295]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-missing-p",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'p'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-missing-a",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'a'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-missing-b",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'b'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-missing-point",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'point'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-missing-scalar",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'scalar'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-new-normal",
+      "kind": "normal-new-input",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "public": [
+            0,
+            1,
+            16
+          ],
+          "ciphertext": [
+            1,
+            2,
+            14
+          ],
+          "centered": [
+            1,
+            2,
+            -3
+          ],
+          "recovered": [
+            1,
+            2,
+            0
+          ]
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "public": [
+            0,
+            1,
+            16
+          ],
+          "ciphertext": [
+            1,
+            2,
+            14
+          ],
+          "centered": [
+            1,
+            2,
+            -3
+          ],
+          "recovered": [
+            1,
+            2,
+            0
+          ]
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-p-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-p-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-p-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-p-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-p-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-p-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "prime: integer outside [2, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-q-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "q: integer outside [4, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-q-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "q: integer outside [4, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-q-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "q: integer outside [4, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-q-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "q: integer outside [4, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-q-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "q: integer outside [4, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-q-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "q: integer outside [4, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-f-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-g-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fp-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-fq-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-r-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-message-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-p",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'p'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-q",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'q'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-f",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'f'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-g",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'g'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-fp",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'fp'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-fq",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'fq'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-r",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'r'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-missing-message",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'message'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-new-normal",
+      "kind": "normal-new-input",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "message": [
+            1
+          ],
+          "codeword": [
+            1,
+            1,
+            1
+          ],
+          "minimum_distance": 3
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "message": [
+            1
+          ],
+          "codeword": [
+            1,
+            1,
+            1
+          ],
+          "minimum_distance": 3
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-vector-string",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-vector-object",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-vector-empty",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-vector-long",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-vector-null",
+      "kind": "vector-shape-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-coefficient-bool",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-coefficient-float",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-coefficient-string",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-coefficient-null",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-coefficient-array",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-ciphertext-coefficient-object",
+      "kind": "coefficient-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-t-type-bool",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "t: integer outside [0, 3]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-t-type-float",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "t: integer outside [0, 3]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-t-type-string",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "t: integer outside [0, 3]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-t-type-null",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "t: integer outside [0, 3]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-t-type-array",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "t: integer outside [0, 3]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-t-type-object",
+      "kind": "scalar-type-rejection",
+      "actual": {
+        "status": "rejected",
+        "reason": "t: integer outside [0, 3]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-missing-generator",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'generator'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-missing-ciphertext",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'ciphertext'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-toy-missing-t",
+      "kind": "missing-field",
+      "actual": {
+        "status": "rejected",
+        "reason": "'t'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-e-nonunit",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "e not invertible"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-m-out-of-range",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 54]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-composite",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "expected prime"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-equal-primes",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "p and q must differ"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "rsa-nonunit-message",
+      "kind": "boundary",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "n": 55,
+          "d": 27,
+          "ciphertext": 10,
+          "recovered": 10
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "n": 55,
+          "d": 27,
+          "ciphertext": 10,
+          "recovered": 10
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-r-nonunit",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "r/g must be units"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-g-invalid-L",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid L(g^lambda)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-m-out-of-range",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [0, 14]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "paillier-even-prime",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "distinct odd primes required"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-nonsuperincreasing",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "superincreasing / modulus / inverse precondition"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-small-modulus",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "superincreasing / modulus / inverse precondition"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-nonunit-multiplier",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "superincreasing / modulus / inverse precondition"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mh-nonbinary",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "binary message required"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-subgroup-generator",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "g is not primitive"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-zero-message",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "message: integer outside [1, 22]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "elgamal-zero-nonce",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "nonce: integer outside [1, 21]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-invalid-point",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid curve point"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-singular",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "singular curve"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-infinity",
+      "kind": "boundary",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "point": null
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "point": null
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-zero-scalar",
+      "kind": "boundary",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "point": null
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "point": null
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ecc-y-zero-doubling",
+      "kind": "boundary",
+      "actual": {
+        "status": "ok",
+        "result": {
+          "point": null
+        }
+      },
+      "expected": {
+        "status": "ok",
+        "result": {
+          "point": null
+        }
+      },
+      "exit_code": 0,
+      "expected_exit": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-bad-fp",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "incorrect polynomial inverse"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-vector-mismatch",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-wrap",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "decryption wrap risk"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "ntru-q-budget",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "q: integer outside [4, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-rank",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "generator rank deficient"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-distance",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "distance insufficient"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-cipher-nonbinary",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "binary ciphertext required"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-nonbinary",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "binary generator required"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-coefficient-bool",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-coefficient-float",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-coefficient-string",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-coefficient-null",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-coefficient-array",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-coefficient-object",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "coefficient: integer outside [-65535, 65535]"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-null",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "toy k must be 1..10"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-string",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "toy k must be 1..10"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-object",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "toy k must be 1..10"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-empty",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "toy k must be 1..10"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-k-budget",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "toy k must be 1..10"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-invalid-row",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "mceliece-matrix-long-row",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "invalid vector length (1..32)"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "unknown-algorithm",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "unsupported algorithm"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "missing-algorithm",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "'algorithm'"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "root-array",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "expected JSON object"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "root-null",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "expected JSON object"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "root-string",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "expected JSON object"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "root-integer",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "expected JSON object"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "root-bool",
+      "kind": "boundary",
+      "actual": {
+        "status": "rejected",
+        "reason": "expected JSON object"
+      },
+      "expected": {
+        "status": "rejected",
+        "reason_nonempty": true
+      },
+      "exit_code": 2,
+      "expected_exit": 2,
+      "stderr": "",
+      "passed": true
+    }
+  ]
+}

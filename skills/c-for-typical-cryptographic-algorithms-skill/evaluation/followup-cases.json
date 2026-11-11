@@ -1,0 +1,15 @@
+{
+  "mh": {
+    "locator": "LZC-2013-SCAN print 89-90; PDF 102-103; manual visual transcription",
+    "private": [10,14,39,68,133,277,548,1104,2196,4390,8789,17570,35140,70290,140578,281158],
+    "modulus": 562320, "multiplier": 5437, "inverse": 505333,
+    "public": [54370,76118,212043,369716,160801,381409,167876,379248,130932,250990,550913,496010,429700,351450,129706,270286],
+    "bits": "0110001001100001", "cipher_hex": "1751a2"
+  },
+  "signature": {
+    "locator": "print 135 formula; synthetic small parameters, not a book signature vector",
+    "p": 11, "generator": 2, "private": 5, "nonce": 7, "hash_integer": 6,
+    "expected_r": 7, "expected_s": 3, "invalid_nonce": 2,
+    "definition": "s=k^-1(H+a*r) mod(p-1); r^s=g^H*y^r mod p; this is not standard DSA"
+  }
+}

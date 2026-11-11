@@ -1,0 +1,17 @@
+{
+  "chapter_documents": 13,
+  "tasks": 34,
+  "candidates": 58,
+  "decisions": {
+    "verified": 7,
+    "reference": 49,
+    "needs_review": 0,
+    "rejected": 2
+  },
+  "c_checks": 864,
+  "constant_checks": 19,
+  "followup_checks": 10,
+  "checks": "structure, links, provenance, explicit result counts and current source/plan hash bindings",
+  "semantic_audit": false,
+  "failures": []
+}

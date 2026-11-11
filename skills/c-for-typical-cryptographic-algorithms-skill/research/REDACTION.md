@@ -1,0 +1,3 @@
+# 公开脱敏记录
+
+包验收首次缺cryptography的stderr含本机路径，原字节仅保存在private；公开副本将路径替换为工作区标识。异常类型、行号、退出码和缺依赖原因保留。原始stderr SHA256：`35f63d811e0d74baabe7cffa89a02a360129777939aaeb8649d2455b7fcc004a`。

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "execution_mode": "actual_execution",
+  "isolation": "self-check; no independent hidden model evaluation",
+  "scope": "small exact arithmetic witnesses, not C implementation acceptance",
+  "original_expectations": [
+    {"id":"rsa-book-first-block","source":"print 105-106","input":{"p":43,"q":59,"e":13,"m":224},"expected":1692},
+    {"id":"elgamal-book","source":"print 137","input":{"p":11,"g":2,"a":5,"k":7,"m":6},"expected":[7,5]},
+    {"id":"paillier-book-r42","source":"print 117","input":{"n":77,"g":5652,"m":42,"r":42},"expected":4624,"known_discrepancy":true},
+    {"id":"paillier-book-formula-r23","source":"print 117","input":{"n":77,"g":5652,"m":42,"r":23},"expected":4624},
+    {"id":"sm2-book-shared-point","source":"print 166-167","input":{"p":11,"a":1,"b":6,"G":[2,7],"private":7,"nonce":7},"expected":[7,2],"known_discrepancy":true},
+    {"id":"ecc-book-public","source":"print 150","expected":[32,27]},
+    {"id":"ecc-book-ephemeral","source":"print 150","expected":[36,189]},
+    {"id":"ecc-book-shared","source":"print 150","expected":[94,129]},
+    {"id":"ecc-book-embedded","source":"print 151","expected":[164,24]},
+    {"id":"ntru-book-cipher","source":"print 128-129","expected":[-5,-4,7,6,3]},
+    {"id":"mceliece-book-toy-cipher","source":"print 188-189","expected":[0,1,1,0,1,1,0]}
+  ],
+  "synthetic_expected": {
+    "mh":{"b":[2,3,7,14,30],"N":61,"w":17,"bits":[1,0,1,1,0],"cipher":147},
+    "sha3_256_empty":"a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a"
+  }
+}

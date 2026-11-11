@@ -1,0 +1,2341 @@
+{
+  "source_id": "LZC-2013-SCAN",
+  "title": "典型密码算法C语言实现",
+  "authors": [
+    "李子臣",
+    "杨亚涛"
+  ],
+  "publisher": "国防工业出版社",
+  "edition": "2013年9月第1版第1次印刷",
+  "isbn_status": "not_transcribed",
+  "sha256": "aa252f1c82e4d1bdfd1b626730daab34202095ee5b19b445498bbeb2f7578ccb",
+  "bytes": 46849674,
+  "pdf_pages": 246,
+  "ocr_engine": "Windows.Media.Ocr; zh-Hans-CN",
+  "ocr_is_authoritative": false,
+  "optical_disc_available": false,
+  "complete_semantic_review": false,
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 105,
+      "ocr_sha256": "0097a267dfd0b8662d23648b5a97f30d6681494cd11316d76e94e9be25625001",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 225,
+      "ocr_sha256": "9d724d345770c7f175db495436ca01d84aabd3ce8522d4219867bfaeef9f9ad6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 58,
+      "ocr_sha256": "b4ed0663a19a9bab0f7acd82e7269cb78a05cb40f027b65c1d62835a414a22c4",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 1018,
+      "ocr_sha256": "9dd1b280490bf819a69c87759147c067bf29a1a8819d31761c47f37fc2b355dd",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 1340,
+      "ocr_sha256": "fb5901c3bb28a97db3be4785011277034ac535f2f1374a1fb2afcfee259d35cb",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 611,
+      "ocr_sha256": "8c78f2f0d57b9f122a09c34fac3dcbac1dec3f4e5c840c60fc837d16374b724c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 594,
+      "ocr_sha256": "d6b421f83851ee398b2983dda609849118a67733c2d7b6cc652a466ec8a80e18",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 790,
+      "ocr_sha256": "bc0d1a589a6e3640546c355b5b8a05ce15e34a4ee08f162fc65106f3976e4552",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 826,
+      "ocr_sha256": "f818cdef34c6c6fcaf69fc16607119259f05c2afe89c2f015ac584360626b4ce",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 789,
+      "ocr_sha256": "35ed112db117f82c1687ca6af60f8bddb661cf433a8a172d65fa3d703fb423bd",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 940,
+      "ocr_sha256": "1ce233c63b5c44fe8bb9fdff5bb3eb961fae2a2d3c1240c7ad1fa3c936078ee8",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 928,
+      "ocr_sha256": "ce5ae2f47c469398edcbaec8f4c492f4f86b4d577eab65b22e671cc932e67727",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 13,
+      "printed_page": null,
+      "native_text_chars": 0,
+      "ocr_chars": 485,
+      "ocr_sha256": "81ea0309626be78d1a486403e492eb41a7dc1d49d895cd94c07ca22b5a95b274",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 14,
+      "printed_page": 1,
+      "native_text_chars": 0,
+      "ocr_chars": 1318,
+      "ocr_sha256": "2b8f36d74138deeaf577fa0d9f83b6f9ca8ca3388fbe1ba5826e09d26ab865c1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 15,
+      "printed_page": 2,
+      "native_text_chars": 0,
+      "ocr_chars": 538,
+      "ocr_sha256": "4c01b661235932da7d9f87a0ce9f0412fb896a645ad35111e36e0423dcffb957",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 16,
+      "printed_page": 3,
+      "native_text_chars": 0,
+      "ocr_chars": 908,
+      "ocr_sha256": "5f4ca1607cd72214fafc0d26520d681d27ec35e9026c83e4d8085e0c5921ccba",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 17,
+      "printed_page": 4,
+      "native_text_chars": 0,
+      "ocr_chars": 1069,
+      "ocr_sha256": "87f1cf3b67eaa921916fae6196f98e0810c4b6957da1ce9a80a3d91d866e6558",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 18,
+      "printed_page": 5,
+      "native_text_chars": 0,
+      "ocr_chars": 1650,
+      "ocr_sha256": "bfa602636e412d4a108bcb6046c9fe9e94592fe64303ff60be6c7665e935188b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 19,
+      "printed_page": 6,
+      "native_text_chars": 0,
+      "ocr_chars": 1223,
+      "ocr_sha256": "14147f729f4d63781c3f241d3be97e06eadd9bf4cb2a411767ece866b343e7c3",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 20,
+      "printed_page": 7,
+      "native_text_chars": 0,
+      "ocr_chars": 1111,
+      "ocr_sha256": "0c614294a35656c1cd7485ecc11dd609753eb17d29750e82574922bfadb0cd8a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 21,
+      "printed_page": 8,
+      "native_text_chars": 0,
+      "ocr_chars": 1618,
+      "ocr_sha256": "2ad456bb5b59f3e5fc8340da9eba88aaf652a8c7b7964f9eed681bb005c3c03c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 22,
+      "printed_page": 9,
+      "native_text_chars": 0,
+      "ocr_chars": 1965,
+      "ocr_sha256": "7d0e4e12769b9fc6c7fc4ceb2bbe559d15ab3a2fdf6b09677376cf730ed0fda4",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 23,
+      "printed_page": 10,
+      "native_text_chars": 0,
+      "ocr_chars": 976,
+      "ocr_sha256": "5003e1bc3101edc065e0c2f30a92936b099c57f0464f2818dcd44f2a1b31fbe0",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 24,
+      "printed_page": 11,
+      "native_text_chars": 0,
+      "ocr_chars": 1469,
+      "ocr_sha256": "c002a0c8ccc04ec69254788562073a673fab29b374632cbe074b4555d549aad3",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 25,
+      "printed_page": 12,
+      "native_text_chars": 0,
+      "ocr_chars": 1279,
+      "ocr_sha256": "1c9fa932d4c48202f767621b041da0e9e3cb5ee44f969533f414136acc54261a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 26,
+      "printed_page": 13,
+      "native_text_chars": 0,
+      "ocr_chars": 336,
+      "ocr_sha256": "33b7b08f6136642b4d185cb6da6369ed96468cbb0f11803e620e412db6038b04",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 27,
+      "printed_page": 14,
+      "native_text_chars": 0,
+      "ocr_chars": 929,
+      "ocr_sha256": "f91c8101aa9e20b382149c4bedf5b609d81e3edf14b28e60753957690a7aa993",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 28,
+      "printed_page": 15,
+      "native_text_chars": 0,
+      "ocr_chars": 400,
+      "ocr_sha256": "630a99818b0f2eda2b29c56928f1b39ce2b0da1c06ac982b8afe5f48aff31365",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 29,
+      "printed_page": 16,
+      "native_text_chars": 0,
+      "ocr_chars": 831,
+      "ocr_sha256": "e5c784716ae6bb41e3429b90f85b15bfcd10e40a1dde4735c8aad70db7743128",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 30,
+      "printed_page": 17,
+      "native_text_chars": 0,
+      "ocr_chars": 436,
+      "ocr_sha256": "143c483fc39485618408fc32bbb4c4a5d681cb0bc8ca0299a7dac30786f83289",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 31,
+      "printed_page": 18,
+      "native_text_chars": 0,
+      "ocr_chars": 968,
+      "ocr_sha256": "1ce7f413893aac7a2be4cf0b5cece17fda40a57719a67eb1ae910d9d3e48afac",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 32,
+      "printed_page": 19,
+      "native_text_chars": 0,
+      "ocr_chars": 1323,
+      "ocr_sha256": "01592637bdd7ed04f8020c65da6f997cba8506f51e3961d7597cee5d541b06b2",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 33,
+      "printed_page": 20,
+      "native_text_chars": 0,
+      "ocr_chars": 1462,
+      "ocr_sha256": "39e284f926649128272c0cb43f63613ca74a31d76dff63e1cb6855b7c716580d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 34,
+      "printed_page": 21,
+      "native_text_chars": 0,
+      "ocr_chars": 1555,
+      "ocr_sha256": "58c30ab4bf64e0b3cdcdd133fd52422032f267a20964235cba0663849f76fb36",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 35,
+      "printed_page": 22,
+      "native_text_chars": 0,
+      "ocr_chars": 1592,
+      "ocr_sha256": "82412f248fceb9ef60a0bd119af50a60ee7c799ff416a2fdbfdea4bb9ad6e448",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 36,
+      "printed_page": 23,
+      "native_text_chars": 0,
+      "ocr_chars": 727,
+      "ocr_sha256": "a762affb445703786cea4ae0e84776af8d5a4bb22969efab67f9e5d0a83eb7ed",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 37,
+      "printed_page": 24,
+      "native_text_chars": 0,
+      "ocr_chars": 1026,
+      "ocr_sha256": "972b4c00fe49ca40a6975df049cbc2b768c48b944d0e51052242422494f9db95",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 38,
+      "printed_page": 25,
+      "native_text_chars": 0,
+      "ocr_chars": 1214,
+      "ocr_sha256": "067fb6b76bc1bfbf71941f8d2579209b7bdf163d9dc872821c24494ae9e9183c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 39,
+      "printed_page": 26,
+      "native_text_chars": 0,
+      "ocr_chars": 429,
+      "ocr_sha256": "1e2baac53550061e449ea32583ba3777af53a8a90517d7657dadb615f142f097",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 40,
+      "printed_page": 27,
+      "native_text_chars": 0,
+      "ocr_chars": 1378,
+      "ocr_sha256": "f10cce27199354ddfd63d08e0e6613f0980eab0b4c00c35b6cd3ebd8d575f2f4",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 41,
+      "printed_page": 28,
+      "native_text_chars": 0,
+      "ocr_chars": 188,
+      "ocr_sha256": "0a6e8e472992aa688c4bd80593afd24474518d0b0edd16524d889ea947ea511a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 42,
+      "printed_page": 29,
+      "native_text_chars": 0,
+      "ocr_chars": 438,
+      "ocr_sha256": "f76e96224947dec32ebda9d6e9b4df192dde431e8305374d26aaf5491b6d852f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 43,
+      "printed_page": 30,
+      "native_text_chars": 0,
+      "ocr_chars": 760,
+      "ocr_sha256": "b13b25074539e977e9b14c2fb72562b95cece762e5e4dbf4a1c31c4a5cb7191e",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 44,
+      "printed_page": 31,
+      "native_text_chars": 0,
+      "ocr_chars": 1735,
+      "ocr_sha256": "9fd2f3752246d51490237c0f6c24e43beb4fa476fee655e856758859f25bd1bb",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 45,
+      "printed_page": 32,
+      "native_text_chars": 0,
+      "ocr_chars": 1777,
+      "ocr_sha256": "06c4745160d03e0f0a968faae253e7705a545284b70a12d1a719e65e48ada8df",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 46,
+      "printed_page": 33,
+      "native_text_chars": 0,
+      "ocr_chars": 1591,
+      "ocr_sha256": "241120ddea4b4c8d11a81c6789b10bb111d6433234bccb94b48ec883fce43409",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 47,
+      "printed_page": 34,
+      "native_text_chars": 0,
+      "ocr_chars": 743,
+      "ocr_sha256": "a142d4405a73aa3c7ae743a082c033092330121da05a06ec96aaf52d5b2e66dd",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 48,
+      "printed_page": 35,
+      "native_text_chars": 0,
+      "ocr_chars": 776,
+      "ocr_sha256": "a0b1165cee944420406f5aa5d1d4e4f7493528e2c1d43180851622a272f31d54",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 49,
+      "printed_page": 36,
+      "native_text_chars": 0,
+      "ocr_chars": 530,
+      "ocr_sha256": "0ea27a1588b3a028366eb50689d6df0feeec40766b9f1e436eb9962b6cae0725",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 50,
+      "printed_page": 37,
+      "native_text_chars": 0,
+      "ocr_chars": 384,
+      "ocr_sha256": "d52282f8257b07f3b3df4a2f686293c812adcb0c7edc8c1ccee25bd6e63d5c41",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 51,
+      "printed_page": 38,
+      "native_text_chars": 0,
+      "ocr_chars": 890,
+      "ocr_sha256": "2a2242cf23e60416ab60d03215bdfc283922d4d7e8de0fa6be2dccbad50b39ce",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 52,
+      "printed_page": 39,
+      "native_text_chars": 0,
+      "ocr_chars": 863,
+      "ocr_sha256": "bc510ce3987f316ee25803e0e80aaa1c103785366cebe2de6d4fbec78c71df7b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 53,
+      "printed_page": 40,
+      "native_text_chars": 0,
+      "ocr_chars": 822,
+      "ocr_sha256": "3c65126dcb058d9b54d986f43071f9bea70f34afd6219368270a9e30c1e52d34",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 54,
+      "printed_page": 41,
+      "native_text_chars": 0,
+      "ocr_chars": 951,
+      "ocr_sha256": "3df3298bec013295617e142354ebcef9a90269203a96881af85b601034788f8b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 55,
+      "printed_page": 42,
+      "native_text_chars": 0,
+      "ocr_chars": 1524,
+      "ocr_sha256": "77df964f3e47fff821acffe333cf35451c5f7aace694ef558d847bcc60bd6970",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 56,
+      "printed_page": 43,
+      "native_text_chars": 0,
+      "ocr_chars": 1311,
+      "ocr_sha256": "575c1c0324919ba98b48e8a10da23976c741de43900b0ed634dfc80eb1a4525c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 57,
+      "printed_page": 44,
+      "native_text_chars": 0,
+      "ocr_chars": 504,
+      "ocr_sha256": "93b0b209b9359f4a84de95858f7b55d6ce0b8e9a20250c7759dd4a77f66c1b74",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 58,
+      "printed_page": 45,
+      "native_text_chars": 0,
+      "ocr_chars": 1595,
+      "ocr_sha256": "efbf6079a95c18abd3126aa5fd8957f9f9e5d3de9a0e04b8870774cd886b085f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 59,
+      "printed_page": 46,
+      "native_text_chars": 0,
+      "ocr_chars": 586,
+      "ocr_sha256": "2258e67ca95bd22bed8166bc1523aa8488b70a5100af95ee4a58460b69b8a803",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 60,
+      "printed_page": 47,
+      "native_text_chars": 0,
+      "ocr_chars": 1379,
+      "ocr_sha256": "f02584329d937d23f190a7283388df6e0f348a9df9218843366a9cbbc632f1f7",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 61,
+      "printed_page": 48,
+      "native_text_chars": 0,
+      "ocr_chars": 1473,
+      "ocr_sha256": "5d106c0365432fd611076b21fdd7fd9b8897adebf8ebc4a86dee3dc536a3a464",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 62,
+      "printed_page": 49,
+      "native_text_chars": 0,
+      "ocr_chars": 1693,
+      "ocr_sha256": "624653e48395487f776de7c7789ed631fe7d0032bf291824778ebcea2e608cc6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 63,
+      "printed_page": 50,
+      "native_text_chars": 0,
+      "ocr_chars": 1900,
+      "ocr_sha256": "0c4cd7d5a314e287b24a7c924d2a0f36d324cd56ae0b77af124d13a6b5682d4c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 64,
+      "printed_page": 51,
+      "native_text_chars": 0,
+      "ocr_chars": 988,
+      "ocr_sha256": "2fcf041e9707d2eec06b5f4456c4b4c7a681a71639e58138ed3b265cba2f04ae",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 65,
+      "printed_page": 52,
+      "native_text_chars": 0,
+      "ocr_chars": 1560,
+      "ocr_sha256": "d8f69add4c001fb4c477532a9f6a9281f422f7a3ab2aed821484dfa0726e78c0",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 66,
+      "printed_page": 53,
+      "native_text_chars": 0,
+      "ocr_chars": 2020,
+      "ocr_sha256": "82eae82e7dd92d75c007652c346bfacbc5bf8dbcdd951041c5c0c323e99d5aba",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 67,
+      "printed_page": 54,
+      "native_text_chars": 0,
+      "ocr_chars": 2009,
+      "ocr_sha256": "d4ea2bcf36197cabf1bb4ed502db5b40cdd63f6ffd6c634f40bce116b1e9db00",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 68,
+      "printed_page": 55,
+      "native_text_chars": 0,
+      "ocr_chars": 2049,
+      "ocr_sha256": "afdfdd4063f8c6ead4962015e7ff05722e881b4dba78c979c8e6f0ccf08dc77b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 69,
+      "printed_page": 56,
+      "native_text_chars": 0,
+      "ocr_chars": 1571,
+      "ocr_sha256": "0f82d03b8b9c2aaf44102aca936ec5bf5c69e6144aa80663c45559e38fd3eef9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 70,
+      "printed_page": 57,
+      "native_text_chars": 0,
+      "ocr_chars": 947,
+      "ocr_sha256": "2edf5191dfb88a431fb532315ec177a7dd59f1770c0d469d5b21f43da2621f82",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 71,
+      "printed_page": 58,
+      "native_text_chars": 0,
+      "ocr_chars": 702,
+      "ocr_sha256": "9caf040b7a45fcc41e3647dd70bbe4516dfb269cb9cd98acb1729b4be4e69252",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 72,
+      "printed_page": 59,
+      "native_text_chars": 0,
+      "ocr_chars": 1023,
+      "ocr_sha256": "52ef3e8f989555b4abed7998a10832d0a85ad53366d58f56ef780480610ea785",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 73,
+      "printed_page": 60,
+      "native_text_chars": 0,
+      "ocr_chars": 712,
+      "ocr_sha256": "23d08b283af46572db78f63711cfa09964f7a7b8c0ba6b28855098c280c6ab24",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 74,
+      "printed_page": 61,
+      "native_text_chars": 0,
+      "ocr_chars": 1098,
+      "ocr_sha256": "9da8e3ee020aee5451f021e0de9df0b7145cb88efcf36ddee60310d5320ed497",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 75,
+      "printed_page": 62,
+      "native_text_chars": 0,
+      "ocr_chars": 937,
+      "ocr_sha256": "bb8da9b7c94a75fa68a1fdbea40e65303313f63aaaf7bd7d917258626430b7c9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 76,
+      "printed_page": 63,
+      "native_text_chars": 0,
+      "ocr_chars": 740,
+      "ocr_sha256": "910933ada0c10bbcf74703681de504e7aab7e1718d5f95b516a7d2acbae24352",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 77,
+      "printed_page": 64,
+      "native_text_chars": 0,
+      "ocr_chars": 544,
+      "ocr_sha256": "96b17e61dba79b8bb40b1c8d57776ddaa7c15c8698ea8926caa0bcd86058eb89",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 78,
+      "printed_page": 65,
+      "native_text_chars": 0,
+      "ocr_chars": 565,
+      "ocr_sha256": "388703587c110efac2b74537ad485d35310f8dea6d6a22f2c2ad10267156a3fc",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 79,
+      "printed_page": 66,
+      "native_text_chars": 0,
+      "ocr_chars": 1200,
+      "ocr_sha256": "b1ea0c9ce5f44d5b4c791a916fdb3aba268c0ab710c6d23a4173701010206edc",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 80,
+      "printed_page": 67,
+      "native_text_chars": 0,
+      "ocr_chars": 1349,
+      "ocr_sha256": "084a8c1d7fc84ffeb19517f914d33e8ac95e6e2cd9db9a334c88ac69e8958cc7",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 81,
+      "printed_page": 68,
+      "native_text_chars": 0,
+      "ocr_chars": 578,
+      "ocr_sha256": "484680fc40c8e3eb55575b9d9e52a687fefef21587f5edd48beb4545b11a9665",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 82,
+      "printed_page": 69,
+      "native_text_chars": 0,
+      "ocr_chars": 726,
+      "ocr_sha256": "1820d8da24736802f5e3a9b5ac3ba567a0843e7b53fa27cd979a7794a27441ab",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 83,
+      "printed_page": 70,
+      "native_text_chars": 0,
+      "ocr_chars": 1154,
+      "ocr_sha256": "748f9a6cd427254c22901f93125a96ac19100e6d6c84a6c1da9277167930f6a2",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 84,
+      "printed_page": 71,
+      "native_text_chars": 0,
+      "ocr_chars": 630,
+      "ocr_sha256": "0735f181681e38aa522346631c216af9f180b8c6dd903c54a4f9237ca59185b0",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 85,
+      "printed_page": 72,
+      "native_text_chars": 0,
+      "ocr_chars": 671,
+      "ocr_sha256": "15bea1ce2d44b71489a01328200c8883dd48b789c650d4ab24bfeff3be6750f2",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 86,
+      "printed_page": 73,
+      "native_text_chars": 0,
+      "ocr_chars": 1326,
+      "ocr_sha256": "0bdb434326a2b84de34ac674283567a55baecd1f0f8a22ddac5a95541f6915a9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 87,
+      "printed_page": 74,
+      "native_text_chars": 0,
+      "ocr_chars": 667,
+      "ocr_sha256": "32619f2fbc6c1b926f25c152c9e7437c37ccf7ca129d0f3aec640e5547d39c24",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 88,
+      "printed_page": 75,
+      "native_text_chars": 0,
+      "ocr_chars": 1621,
+      "ocr_sha256": "65e1753d26fd164cded24d42a406b72fe80ed608a0a19a1382eedf6e8c190ac2",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 89,
+      "printed_page": 76,
+      "native_text_chars": 0,
+      "ocr_chars": 1962,
+      "ocr_sha256": "df653738e0ea5285f34aea57ed46cf400203fcee807bac59a60ee4cb16723a22",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 90,
+      "printed_page": 77,
+      "native_text_chars": 0,
+      "ocr_chars": 1931,
+      "ocr_sha256": "6c5d73df6044cd1e8ab9400b3b40ceea6762ca89eebc2909d935c81ef3b841a9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 91,
+      "printed_page": 78,
+      "native_text_chars": 0,
+      "ocr_chars": 424,
+      "ocr_sha256": "1eb697ba4c255a21044596287d0cd61223f35e35949d630cc682ca36d76f6014",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 92,
+      "printed_page": 79,
+      "native_text_chars": 0,
+      "ocr_chars": 891,
+      "ocr_sha256": "a360696900ae69f59f3aafc0a27dce22262f35e54f3ad110902732691f658098",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 93,
+      "printed_page": 80,
+      "native_text_chars": 0,
+      "ocr_chars": 989,
+      "ocr_sha256": "4c77dc60d266a255abc6707a08407061e0d843bbf174fb7e00df910a805a6bc9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 94,
+      "printed_page": 81,
+      "native_text_chars": 0,
+      "ocr_chars": 806,
+      "ocr_sha256": "77936aeb3700ec2a44a05e6469e8cc0777ac1cec1fc56d24a745e09992835e09",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 95,
+      "printed_page": 82,
+      "native_text_chars": 0,
+      "ocr_chars": 1064,
+      "ocr_sha256": "17549828495f4ed8d40d4ac71781b785305a873bd0ed2575c64e207176c9bd52",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 96,
+      "printed_page": 83,
+      "native_text_chars": 0,
+      "ocr_chars": 886,
+      "ocr_sha256": "13c7ace3a9944aa585a732dd78f16a0e00202794c472bca22113e94eb3a3e2b7",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 97,
+      "printed_page": 84,
+      "native_text_chars": 0,
+      "ocr_chars": 559,
+      "ocr_sha256": "ba1d1bd56355b55d06e7f24044d8a7fe74367f9bc9ff21387e24d711bcf9ad47",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 98,
+      "printed_page": 85,
+      "native_text_chars": 0,
+      "ocr_chars": 1266,
+      "ocr_sha256": "7c834d7efec670b8725756c9df2162a006583e8f4c9c3c76c4cd106e0b791451",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 99,
+      "printed_page": 86,
+      "native_text_chars": 0,
+      "ocr_chars": 1352,
+      "ocr_sha256": "5d933816f3e64b3ea0ec64112075381b8b6d29a01bbf493bd3b20b5583db705f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 100,
+      "printed_page": 87,
+      "native_text_chars": 0,
+      "ocr_chars": 1811,
+      "ocr_sha256": "00a1396c8c40cee5a0eb01c4f45ef8c79abea38c450c2bbde5944ab1909dd47b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 101,
+      "printed_page": 88,
+      "native_text_chars": 0,
+      "ocr_chars": 1392,
+      "ocr_sha256": "0fd150b52a46339fbfe16a22fbcab2d2d878a3d6d6f9d3d53bfb0edc9476f517",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 102,
+      "printed_page": 89,
+      "native_text_chars": 0,
+      "ocr_chars": 1464,
+      "ocr_sha256": "e84ac96f3962ae707561fa8d40085b7e3831eb68476699931d8fc252b448f49e",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 103,
+      "printed_page": 90,
+      "native_text_chars": 0,
+      "ocr_chars": 957,
+      "ocr_sha256": "31cb3c7c0546bbd0d49928979f4288680a70b65cb44dfe2334ef5239311d2c11",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 104,
+      "printed_page": 91,
+      "native_text_chars": 0,
+      "ocr_chars": 869,
+      "ocr_sha256": "6996d965307fb4f2c54cbc0cc2210f147aa4c8561e678d4d59ae65f0cab842b1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 105,
+      "printed_page": 92,
+      "native_text_chars": 0,
+      "ocr_chars": 778,
+      "ocr_sha256": "2ae288d5139ebbccdaf72cc652005fb0cba7d637677f731d372adb22d292489a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 106,
+      "printed_page": 93,
+      "native_text_chars": 0,
+      "ocr_chars": 925,
+      "ocr_sha256": "ba43d3fc6e0fcc36c52abe9cca8d183696f1b3fb2b866afc4aa3508f5588c300",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 107,
+      "printed_page": 94,
+      "native_text_chars": 0,
+      "ocr_chars": 871,
+      "ocr_sha256": "ab9cb9d10988b3801aa1d0166a552524f7fd5a1ddeb9c3485f2d3ed89a195394",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 108,
+      "printed_page": 95,
+      "native_text_chars": 0,
+      "ocr_chars": 1413,
+      "ocr_sha256": "bfc45af7f9c77988c3872af7eec809150547e595a98c5fdcf157188218f0b462",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 109,
+      "printed_page": 96,
+      "native_text_chars": 0,
+      "ocr_chars": 806,
+      "ocr_sha256": "7a3f89a90d291f3024f7696b58e7009a8f6c2a4c8f3ad13e2b29beaf8a439257",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 110,
+      "printed_page": 97,
+      "native_text_chars": 0,
+      "ocr_chars": 1248,
+      "ocr_sha256": "748ae6ce46896e28994299c313c7c9e2112c724167174714d7dde76b0e789b01",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 111,
+      "printed_page": 98,
+      "native_text_chars": 0,
+      "ocr_chars": 1373,
+      "ocr_sha256": "4736c4545a97267971e1d28ce55626bc3a3becb9436ca1c8f4e8e963d194ccf1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 112,
+      "printed_page": 99,
+      "native_text_chars": 0,
+      "ocr_chars": 1685,
+      "ocr_sha256": "9b7b5d3d18146d7710a9e53af43139d99a992319e046eee42b23c1762e1b8a07",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 113,
+      "printed_page": 100,
+      "native_text_chars": 0,
+      "ocr_chars": 1721,
+      "ocr_sha256": "e37849b17c89ee21ef35fbf260d975c8498c19d829efef275cb709ff3706b425",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 114,
+      "printed_page": 101,
+      "native_text_chars": 0,
+      "ocr_chars": 1947,
+      "ocr_sha256": "cbe59fdce20320f478dd241345211f2c9b1be11e30b092eec4da4669173ca51b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 115,
+      "printed_page": 102,
+      "native_text_chars": 0,
+      "ocr_chars": 1574,
+      "ocr_sha256": "b90b207ad6a01e5ea64eccfd26e54b00ba0a98d8732a229b7d9b1d16ff06665f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 116,
+      "printed_page": 103,
+      "native_text_chars": 0,
+      "ocr_chars": 1470,
+      "ocr_sha256": "d2ac03cbbc9b6161b683d61a18cb7cb943b07ff4a760bd9f22099213d49d069d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 117,
+      "printed_page": 104,
+      "native_text_chars": 0,
+      "ocr_chars": 1585,
+      "ocr_sha256": "c8aeda4890ad4db5c8eff51d98439256486b7a5607a47670112f7ba6965c178b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 118,
+      "printed_page": 105,
+      "native_text_chars": 0,
+      "ocr_chars": 1465,
+      "ocr_sha256": "092e8b29b60ae05e306ec44b3c804d54bb46558ac77c8eaec1dc637213b743dd",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 119,
+      "printed_page": 106,
+      "native_text_chars": 0,
+      "ocr_chars": 1167,
+      "ocr_sha256": "96d0fe6313022cac13bd0c0087a2622654205a96da686a5fd7482517443d634b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 120,
+      "printed_page": 107,
+      "native_text_chars": 0,
+      "ocr_chars": 774,
+      "ocr_sha256": "5d11816b1653f02cbb5116aee2f1e04b6beb27654a13b87a7ef69cf66d310fad",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 121,
+      "printed_page": 108,
+      "native_text_chars": 0,
+      "ocr_chars": 539,
+      "ocr_sha256": "56b7299f8b5f464b30a16c2cf1780b121aed7c8b5f80e6a6b0079b19bbe5b2c1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 122,
+      "printed_page": 109,
+      "native_text_chars": 0,
+      "ocr_chars": 547,
+      "ocr_sha256": "84442a683a7133b202a4c6fba6ed16d08cb424e75b563ab0ed47b904b609c412",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 123,
+      "printed_page": 110,
+      "native_text_chars": 0,
+      "ocr_chars": 762,
+      "ocr_sha256": "01812cd220bfa87ce284c71963a9965de1b46978e4302b96b8c53bd58069cc78",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 124,
+      "printed_page": 111,
+      "native_text_chars": 0,
+      "ocr_chars": 1300,
+      "ocr_sha256": "00ac5110f5351e81191250930c4009fafa70013ce05957e8e33034da58c3f53a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 125,
+      "printed_page": 112,
+      "native_text_chars": 0,
+      "ocr_chars": 1302,
+      "ocr_sha256": "72232e85003de95672cb833d9ef3c63828aff953456a119da8f4c6d3c0efa308",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 126,
+      "printed_page": 113,
+      "native_text_chars": 0,
+      "ocr_chars": 983,
+      "ocr_sha256": "74c0ea1bc7494a7bfc3881473a6ced4a9a4447bfc5e90574b8df22a8d9b670ca",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 127,
+      "printed_page": 114,
+      "native_text_chars": 0,
+      "ocr_chars": 991,
+      "ocr_sha256": "34bc70443b8045a49cb679c9c2979d9b620684e5b2848e51ca05256fbe29b3c9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 128,
+      "printed_page": 115,
+      "native_text_chars": 0,
+      "ocr_chars": 1114,
+      "ocr_sha256": "34b16ef6ebaa393f2a673f73f9a8e51c2af8d2ae003c6c0ed915add4ee27ef2a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 129,
+      "printed_page": 116,
+      "native_text_chars": 0,
+      "ocr_chars": 1593,
+      "ocr_sha256": "f8e3db7f54bf5d557147052f6d82f652655d5d051aa89699c5d8fda25ef4c335",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 130,
+      "printed_page": 117,
+      "native_text_chars": 0,
+      "ocr_chars": 1451,
+      "ocr_sha256": "684fb3de6ec1a9e128fa8b314d061a28eaa11d7a443b87c469b860f5742bba76",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 131,
+      "printed_page": 118,
+      "native_text_chars": 0,
+      "ocr_chars": 992,
+      "ocr_sha256": "2a2b2a4aef68260930499d3d4ad1d09521a3936d7a22e54081d99ddebd86af7f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 132,
+      "printed_page": 119,
+      "native_text_chars": 0,
+      "ocr_chars": 628,
+      "ocr_sha256": "4744475aaf667ea8ce7a017442ba19f20c050f94240f308d874e6416444193a1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 133,
+      "printed_page": 120,
+      "native_text_chars": 0,
+      "ocr_chars": 1176,
+      "ocr_sha256": "fe33789f9a5907386d43dc85e32bad3a3fef128ba9df51a0cc115109a30532db",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 134,
+      "printed_page": 121,
+      "native_text_chars": 0,
+      "ocr_chars": 1019,
+      "ocr_sha256": "ee2627fa55e119f41c29fe8355dd6a2453e30e7c63e2b30ac3118535e7506c75",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 135,
+      "printed_page": 122,
+      "native_text_chars": 0,
+      "ocr_chars": 741,
+      "ocr_sha256": "e089bc91f6ea21f165400465afbc9454231983b91454e26a32b344c9c1c495a8",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 136,
+      "printed_page": 123,
+      "native_text_chars": 0,
+      "ocr_chars": 932,
+      "ocr_sha256": "01d89a0d7defa99d214551c82e24b12bc5c928848f5f65cc1f0d02816b3cc0f1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 137,
+      "printed_page": 124,
+      "native_text_chars": 0,
+      "ocr_chars": 747,
+      "ocr_sha256": "963c54c6e91c2015181ba6cba3ac085fd0856afb11d5ef12f3229c7635157691",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 138,
+      "printed_page": 125,
+      "native_text_chars": 0,
+      "ocr_chars": 992,
+      "ocr_sha256": "604362574c4662eda8a1a07b8d712d196da733e253ef7e44af7e439045570f5e",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 139,
+      "printed_page": 126,
+      "native_text_chars": 0,
+      "ocr_chars": 1767,
+      "ocr_sha256": "177fca49c0b284e023fe83436cfb38e23b1d20eba6212a7320a83f6e8af76f99",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 140,
+      "printed_page": 127,
+      "native_text_chars": 0,
+      "ocr_chars": 1948,
+      "ocr_sha256": "b56aff2ef704c82e25017c63a517a2378ac8af20b20134cfc6c1e4d254fb1ea0",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 141,
+      "printed_page": 128,
+      "native_text_chars": 0,
+      "ocr_chars": 1820,
+      "ocr_sha256": "443676319f6e223300d6bc6918db6690c433a04d9419d99717f33f68b30e45dd",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 142,
+      "printed_page": 129,
+      "native_text_chars": 0,
+      "ocr_chars": 412,
+      "ocr_sha256": "2d05a18f8aadb94c636804c44b1e560d32f7c499fac1bb6da7ca3572b8277366",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 143,
+      "printed_page": 130,
+      "native_text_chars": 0,
+      "ocr_chars": 572,
+      "ocr_sha256": "2a09282b5629e690a3a1d5af708820d4c83e1d201d6efa84fc0d1b07b46a2003",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 144,
+      "printed_page": 131,
+      "native_text_chars": 0,
+      "ocr_chars": 1181,
+      "ocr_sha256": "fb6cd52203ac5c81b87b63943b3d16890a63f6796665f0b77c9a7f0ffb400ad7",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 145,
+      "printed_page": 132,
+      "native_text_chars": 0,
+      "ocr_chars": 1308,
+      "ocr_sha256": "c210d43378037678e3e078064d9e183badb9ab96528d5dffa7695649de757dc6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 146,
+      "printed_page": 133,
+      "native_text_chars": 0,
+      "ocr_chars": 1308,
+      "ocr_sha256": "9b128124bff8903019109a01885dd9270568548a9ebfd3776dd13c134c98a505",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 147,
+      "printed_page": 134,
+      "native_text_chars": 0,
+      "ocr_chars": 987,
+      "ocr_sha256": "5a67913fe15862a4a1b8c60bc220d7bcf168c0ec3a44709edb6f1cbc88a1886a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 148,
+      "printed_page": 135,
+      "native_text_chars": 0,
+      "ocr_chars": 1154,
+      "ocr_sha256": "8831516693ca0dc7bb277fa5716b8476300d9e26170b1bb3c3ec1fe66d9b40a2",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 149,
+      "printed_page": 136,
+      "native_text_chars": 0,
+      "ocr_chars": 1801,
+      "ocr_sha256": "42eee15b63b5cbd9eb219024735eb3f0d24343312e824960e94a2bbf427856ef",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 150,
+      "printed_page": 137,
+      "native_text_chars": 0,
+      "ocr_chars": 1150,
+      "ocr_sha256": "c7754ef19c96e72d35cb045361e7885384aad5757ad513938d5b3013f86ea0c3",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 151,
+      "printed_page": 138,
+      "native_text_chars": 0,
+      "ocr_chars": 1039,
+      "ocr_sha256": "51c06e98031b33b16f826643647f2234e8299c15d549bf9dd5e0c28b720f5452",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 152,
+      "printed_page": 139,
+      "native_text_chars": 0,
+      "ocr_chars": 1074,
+      "ocr_sha256": "bebccb383fcb202175b5e79fd83ee38445b51e48f16247f90d82c90214c6c755",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 153,
+      "printed_page": 140,
+      "native_text_chars": 0,
+      "ocr_chars": 1015,
+      "ocr_sha256": "af65d79a8c3968d1e777e010386677510ead281fa8cb0318ad958db5c6637334",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 154,
+      "printed_page": 141,
+      "native_text_chars": 0,
+      "ocr_chars": 759,
+      "ocr_sha256": "d2f0fab6485c9a109d8bc646bebc7832e043db8ff891e3834200bf22fc12f061",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 155,
+      "printed_page": 142,
+      "native_text_chars": 0,
+      "ocr_chars": 1051,
+      "ocr_sha256": "fc1c6999ead7d0a18b70206f96093283697ae23f1ad023eb90effa85ff384666",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 156,
+      "printed_page": 143,
+      "native_text_chars": 0,
+      "ocr_chars": 1257,
+      "ocr_sha256": "26cddacf8ef588bb9d602649a246022ccadb6c282405ff4691f9791a225a924f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 157,
+      "printed_page": 144,
+      "native_text_chars": 0,
+      "ocr_chars": 1263,
+      "ocr_sha256": "718a8372e949b6cbde7a908e4d1debb2f1fd8a9fc47045f61e1b759cc5d8d1be",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 158,
+      "printed_page": 145,
+      "native_text_chars": 0,
+      "ocr_chars": 703,
+      "ocr_sha256": "af61170d0502560ba00a20f275668b8af787c9e67f69c05a47e43a365c00a911",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 159,
+      "printed_page": 146,
+      "native_text_chars": 0,
+      "ocr_chars": 1386,
+      "ocr_sha256": "d7a936ca65ca81c308aee3c572b5df357be794e11ad5412b0e408c7f32f30257",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 160,
+      "printed_page": 147,
+      "native_text_chars": 0,
+      "ocr_chars": 1307,
+      "ocr_sha256": "6f2e2ca94d3f95dd837d8353502b10814465bc39efd3da574ca00ade950a1574",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 161,
+      "printed_page": 148,
+      "native_text_chars": 0,
+      "ocr_chars": 1330,
+      "ocr_sha256": "cd37bec51ccd8223d04503d057b0193ccc050aa62f7e64f6dec9139bd49bb48b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 162,
+      "printed_page": 149,
+      "native_text_chars": 0,
+      "ocr_chars": 1680,
+      "ocr_sha256": "23d601a2c2d0633362987c0bf040743a619c55c352b5a5168ab5dd0e544ec371",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 163,
+      "printed_page": 150,
+      "native_text_chars": 0,
+      "ocr_chars": 1681,
+      "ocr_sha256": "76d64ddc78c3bdaf6fa182948eaaa80326fd90f53494b49269bc3ad34ea2133e",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 164,
+      "printed_page": 151,
+      "native_text_chars": 0,
+      "ocr_chars": 1477,
+      "ocr_sha256": "68887c6899f4c3be26878c525656c8414cab991ed590574dca1ea56bdccc6ddf",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 165,
+      "printed_page": 152,
+      "native_text_chars": 0,
+      "ocr_chars": 797,
+      "ocr_sha256": "6888313f6ff508035d204cc5f8c6cc5cd160be1ddb765a2db7be8330662de833",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 166,
+      "printed_page": 153,
+      "native_text_chars": 0,
+      "ocr_chars": 853,
+      "ocr_sha256": "7ab15f891e6838f32a30239c530228b4bb8578b1d269b5add9535175aede664d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 167,
+      "printed_page": 154,
+      "native_text_chars": 0,
+      "ocr_chars": 985,
+      "ocr_sha256": "7a9b9db7286c8b3606c56c9ab3acdca09c5d8fefb3856417c0b722927087468d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 168,
+      "printed_page": 155,
+      "native_text_chars": 0,
+      "ocr_chars": 802,
+      "ocr_sha256": "dabd073e09dc08b28999171f4834600ee2d408d5499988b476cf81407d4b19c6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 169,
+      "printed_page": 156,
+      "native_text_chars": 0,
+      "ocr_chars": 931,
+      "ocr_sha256": "1fe9e93099580ccd1afddb7b876b3e25622c046f6329494e60e26a09658a1564",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 170,
+      "printed_page": 157,
+      "native_text_chars": 0,
+      "ocr_chars": 856,
+      "ocr_sha256": "ee342071eb30c94288f76cd3750e912d9e72cd22e8d449a7c374e31ef0927962",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 171,
+      "printed_page": 158,
+      "native_text_chars": 0,
+      "ocr_chars": 1148,
+      "ocr_sha256": "ff8cfadd4145896f4f7b883961b31b692f1ade03796cd98c4d91828d4212bcfa",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 172,
+      "printed_page": 159,
+      "native_text_chars": 0,
+      "ocr_chars": 1257,
+      "ocr_sha256": "00dac85a2a6830838f7e70670f96a53c6518bfa69b7b960ec8892a0723b02154",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 173,
+      "printed_page": 160,
+      "native_text_chars": 0,
+      "ocr_chars": 371,
+      "ocr_sha256": "06773fd47ac1761ee498a6a332215b13a8e62b1574038d92d4f1f0aecff56c5b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 174,
+      "printed_page": 161,
+      "native_text_chars": 0,
+      "ocr_chars": 1402,
+      "ocr_sha256": "fa2bd060a51944fe25b6eec0efd0346fc183f8bf12c5b129e1787d3ec89cdd6c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 175,
+      "printed_page": 162,
+      "native_text_chars": 0,
+      "ocr_chars": 1471,
+      "ocr_sha256": "fa9201f5bd62c6427c84278e0c55230a09a0b6e64fcd8add944a2e18db8f7c1c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 176,
+      "printed_page": 163,
+      "native_text_chars": 0,
+      "ocr_chars": 1608,
+      "ocr_sha256": "1e0899185b8179f84cc019be4e2532c1ebf294f06fd6323fe872364fc1a7e6d8",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 177,
+      "printed_page": 164,
+      "native_text_chars": 0,
+      "ocr_chars": 2193,
+      "ocr_sha256": "0a8526ef03c8f8e04bb8c0fe8a81c221529c94382317abd78cf90972cfaf6948",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 178,
+      "printed_page": 165,
+      "native_text_chars": 0,
+      "ocr_chars": 1828,
+      "ocr_sha256": "6620c7e4bdb19c6246b2e413c23feda4106190bfe06c9da3c1fa9f76c1c9206d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 179,
+      "printed_page": 166,
+      "native_text_chars": 0,
+      "ocr_chars": 1695,
+      "ocr_sha256": "4a36aac17bff151c3a3d41d36d3c8dcc8eb9dea0d85dd9b86406b41fe4b1be45",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 180,
+      "printed_page": 167,
+      "native_text_chars": 0,
+      "ocr_chars": 1042,
+      "ocr_sha256": "bf7f5145ebaad8399bda04b2aa9a8f7545fc97dd2ce5bff48990fc36c26e521a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 181,
+      "printed_page": 168,
+      "native_text_chars": 0,
+      "ocr_chars": 309,
+      "ocr_sha256": "e8bf6f841aed94fa9167f371d2cb81dbdc18182fb8037e9ee407d02b098b3878",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 182,
+      "printed_page": 169,
+      "native_text_chars": 0,
+      "ocr_chars": 311,
+      "ocr_sha256": "c2a7720f6ea8b16dab9d6ac2247b0b69e8ed7b967680f9aaec3677a25929f63e",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 183,
+      "printed_page": 170,
+      "native_text_chars": 0,
+      "ocr_chars": 1038,
+      "ocr_sha256": "f64e47bed965ffb75269d79b8c812f20a5436ee174acd8fa0fe4aa76a46907c6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 184,
+      "printed_page": 171,
+      "native_text_chars": 0,
+      "ocr_chars": 877,
+      "ocr_sha256": "7bbfba0d836acc00379f46ba7e026901fd272bb6451d726e448d2ea174bb7478",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 185,
+      "printed_page": 172,
+      "native_text_chars": 0,
+      "ocr_chars": 1012,
+      "ocr_sha256": "d75240dd23c546f26dbc24d87921f78bfc409adb4f6f9060a9e9ec970941fac9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 186,
+      "printed_page": 173,
+      "native_text_chars": 0,
+      "ocr_chars": 1062,
+      "ocr_sha256": "2e418d95d9674fcb5f98110e5d1c76393c70a2bdf8066e2e50e7c573a8187a2b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 187,
+      "printed_page": 174,
+      "native_text_chars": 0,
+      "ocr_chars": 783,
+      "ocr_sha256": "9528cbb5346f0854cc60f06c6e2be8d4716e28019bb6f6fd8856ab858884a01f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 188,
+      "printed_page": 175,
+      "native_text_chars": 0,
+      "ocr_chars": 562,
+      "ocr_sha256": "889917c17cd6f388db6fcd3c16b39ac608aa066ff2dca60fcbb7b3f37b9bbc05",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 189,
+      "printed_page": 176,
+      "native_text_chars": 0,
+      "ocr_chars": 652,
+      "ocr_sha256": "54557e5097091c6c10a3b986106abeb3da72af5ba85f8837fe9857923028c4c6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 190,
+      "printed_page": 177,
+      "native_text_chars": 0,
+      "ocr_chars": 999,
+      "ocr_sha256": "285db3a42846fab6d75261e3478ef5c10cd555d622010b22776dc72cf46479fb",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 191,
+      "printed_page": 178,
+      "native_text_chars": 0,
+      "ocr_chars": 628,
+      "ocr_sha256": "bd23c1fae11af0182f8541ff4295835136dfc6f10db6ae3ab449ab0b48859e51",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 192,
+      "printed_page": 179,
+      "native_text_chars": 0,
+      "ocr_chars": 1072,
+      "ocr_sha256": "15af536276574330f5661dcdabd5014f25f1fd3d9f01bffb5ae6b0f6f3f52be5",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 193,
+      "printed_page": 180,
+      "native_text_chars": 0,
+      "ocr_chars": 1260,
+      "ocr_sha256": "51bf61497f6eba347fc0c3a21e39b6a9a9e2e8291e8255bdafd1d08ce44e378d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 194,
+      "printed_page": 181,
+      "native_text_chars": 0,
+      "ocr_chars": 927,
+      "ocr_sha256": "360cb29982375f1dd1c9c3badfd34f33d23980c5ac517346b5af393b06e1028b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 195,
+      "printed_page": 182,
+      "native_text_chars": 0,
+      "ocr_chars": 541,
+      "ocr_sha256": "96111edb2d14bbb50291bf094244da783fc880fc8a0314a7bce9090cdea6f0da",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 196,
+      "printed_page": 183,
+      "native_text_chars": 0,
+      "ocr_chars": 987,
+      "ocr_sha256": "6309d946139df202a353549ba8c075661958dc69ec948a533a3f288a4b656e73",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 197,
+      "printed_page": 184,
+      "native_text_chars": 0,
+      "ocr_chars": 1751,
+      "ocr_sha256": "0ac6492ab914176d4387b4a3aa9a2748dea1a46fa540e86b02bbb28f298ef987",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 198,
+      "printed_page": 185,
+      "native_text_chars": 0,
+      "ocr_chars": 1742,
+      "ocr_sha256": "26fb898b3b9d5d0cc2cdde7670ecba4b69f66c99cc464ee0acd37b49e2999ac3",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 199,
+      "printed_page": 186,
+      "native_text_chars": 0,
+      "ocr_chars": 1577,
+      "ocr_sha256": "17ed304f816ab8e36e54840eb87eb835bdacd9b9b06742cce52df95e9c3e1d85",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 200,
+      "printed_page": 187,
+      "native_text_chars": 0,
+      "ocr_chars": 1361,
+      "ocr_sha256": "7155c3f68af76d0e225bcda16d0ba93994962e4a5a8afa913d7eb09516c2c46f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 201,
+      "printed_page": 188,
+      "native_text_chars": 0,
+      "ocr_chars": 1293,
+      "ocr_sha256": "8623e9994f196657d675cdefe85c6a42a2f48e90420326ac17f33e72d90059b7",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 202,
+      "printed_page": 189,
+      "native_text_chars": 0,
+      "ocr_chars": 551,
+      "ocr_sha256": "0b33ba6f30efdc7356e12e1964a64ec474909be16661789da90836b5625f6a2d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 203,
+      "printed_page": 190,
+      "native_text_chars": 0,
+      "ocr_chars": 838,
+      "ocr_sha256": "feb698c5c6fc7f936bdf0257c88dcb61ef8039f2ab1fe4cad793344fc127b62d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 204,
+      "printed_page": 191,
+      "native_text_chars": 0,
+      "ocr_chars": 633,
+      "ocr_sha256": "53500d3c99e9e314a98f3c3439956f9cf188e387c25fc279cc47c6bc161774ff",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 205,
+      "printed_page": 192,
+      "native_text_chars": 0,
+      "ocr_chars": 736,
+      "ocr_sha256": "485e0e4bedc97b9c91c286ac4d8b5b3e6e9b7a64cbb616cc39d5b414cbd160c7",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 206,
+      "printed_page": 193,
+      "native_text_chars": 0,
+      "ocr_chars": 541,
+      "ocr_sha256": "37613a5355d62016459e77d99dfd12bb0b92c7dd8e5fa3acd60ca75b58714291",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 207,
+      "printed_page": 194,
+      "native_text_chars": 0,
+      "ocr_chars": 1281,
+      "ocr_sha256": "e615cab61e2e480c0bdfcd0d251225e670ffad7374edf94e2d9f1542b073e884",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 208,
+      "printed_page": 195,
+      "native_text_chars": 0,
+      "ocr_chars": 2456,
+      "ocr_sha256": "98a3c9ec36860b6bddda4e7e3d4091842b01e7832fa71e590222bbfb4b38556f",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 209,
+      "printed_page": 196,
+      "native_text_chars": 0,
+      "ocr_chars": 3401,
+      "ocr_sha256": "f9e3d31569c3040ff5a615234d4a8c1976b13ec609e9f906c541b71fdfe804ae",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 210,
+      "printed_page": 197,
+      "native_text_chars": 0,
+      "ocr_chars": 3225,
+      "ocr_sha256": "e4acab018986792d854d6ec8766bc4e545d66ba81cf8fdb111212255037b717a",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 211,
+      "printed_page": 198,
+      "native_text_chars": 0,
+      "ocr_chars": 709,
+      "ocr_sha256": "28de5c429ae5f10659c22c75037fc253abd8d859557b22caf94cf0a6a92fc393",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 212,
+      "printed_page": 199,
+      "native_text_chars": 0,
+      "ocr_chars": 1435,
+      "ocr_sha256": "2783921279d9882360eab928eea2644846bb8777489ce0a5e13c6a21b4d2eee9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 213,
+      "printed_page": 200,
+      "native_text_chars": 0,
+      "ocr_chars": 782,
+      "ocr_sha256": "7cd968ae8655e12e817ac0cf6b4f4a4360f8aab6f3d3b0840f1aedd4b94e53d5",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 214,
+      "printed_page": 201,
+      "native_text_chars": 0,
+      "ocr_chars": 1029,
+      "ocr_sha256": "1976bcdef64de5ae06a2e712a5c13054967eecb532351c0b43b7f1ad227fdca5",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 215,
+      "printed_page": 202,
+      "native_text_chars": 0,
+      "ocr_chars": 1118,
+      "ocr_sha256": "fcc62c01846bbb618d6aca54bc490796c1e23e6ca38f6bd5d9d1d4e95c49ef5c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 216,
+      "printed_page": 203,
+      "native_text_chars": 0,
+      "ocr_chars": 1106,
+      "ocr_sha256": "d1d2952dc20b85393624439edb2b50bce6015398292d5e188a65d60f8f8952d2",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 217,
+      "printed_page": 204,
+      "native_text_chars": 0,
+      "ocr_chars": 1266,
+      "ocr_sha256": "6f7906dcc4f59b639f25eb17259dc6097124877ee20ec988360fe659ba7fb85d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 218,
+      "printed_page": 205,
+      "native_text_chars": 0,
+      "ocr_chars": 1089,
+      "ocr_sha256": "bca7dc51d4f2115f285eec134780d872643cca6a833e189e7f477467f80361cb",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 219,
+      "printed_page": 206,
+      "native_text_chars": 0,
+      "ocr_chars": 870,
+      "ocr_sha256": "33ebf0a23b53884aa9a85b156719c4e6cac4f54cc7e165d9baf0d9fc73f2e29d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 220,
+      "printed_page": 207,
+      "native_text_chars": 0,
+      "ocr_chars": 882,
+      "ocr_sha256": "f5b041590999c8b50b45980883b8536b9a9e61d39ff1738138179cfae65f4b79",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 221,
+      "printed_page": 208,
+      "native_text_chars": 0,
+      "ocr_chars": 1494,
+      "ocr_sha256": "075615bab368921cbb17e34ee1ea030b9c19744dbca9e373d6f84fffebabbb5b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 222,
+      "printed_page": 209,
+      "native_text_chars": 0,
+      "ocr_chars": 925,
+      "ocr_sha256": "94556e5cd8b8be005701fb0b99367a5b18849c859507a1923fb138217959bcb5",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 223,
+      "printed_page": 210,
+      "native_text_chars": 0,
+      "ocr_chars": 883,
+      "ocr_sha256": "9b4d11a11834ea492954b95f36775861a31f9d7533391960898e37519fcf6ca1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 224,
+      "printed_page": 211,
+      "native_text_chars": 0,
+      "ocr_chars": 1253,
+      "ocr_sha256": "cba58ce90027e492109dffa68be411035237442f84d83161f0a95ce1c9d27eff",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 225,
+      "printed_page": 212,
+      "native_text_chars": 0,
+      "ocr_chars": 909,
+      "ocr_sha256": "b45bab0cd776a37358566aab204974241de7eea3de0079b6884ea9d4b9d5c0bb",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 226,
+      "printed_page": 213,
+      "native_text_chars": 0,
+      "ocr_chars": 1549,
+      "ocr_sha256": "3f24145bc6f27612436682b1fd8adbca01ccc848879f1e116998c3ffac17806d",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 227,
+      "printed_page": 214,
+      "native_text_chars": 0,
+      "ocr_chars": 1507,
+      "ocr_sha256": "edda3d6c4ae0037bbfd05a329d7c3dc3fe0ac0d314f7ebf864db5e7a4129e3cb",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 228,
+      "printed_page": 215,
+      "native_text_chars": 0,
+      "ocr_chars": 908,
+      "ocr_sha256": "d1babbd2e4996c225bb94b9c18796448d68fb1bb43cee1fd317de2bced06dc0c",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 229,
+      "printed_page": 216,
+      "native_text_chars": 0,
+      "ocr_chars": 1429,
+      "ocr_sha256": "9c2e17b8293364a1a09165856ebd60b376a56e686748699c1f78302f4be133f6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 230,
+      "printed_page": 217,
+      "native_text_chars": 0,
+      "ocr_chars": 1175,
+      "ocr_sha256": "7b6633e5255719f1944c884cb20d19b98c7a2abac8d1a4263c244cd0bad4bff9",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 231,
+      "printed_page": 218,
+      "native_text_chars": 0,
+      "ocr_chars": 902,
+      "ocr_sha256": "50ccecff55dcd72ffe1d5825525b788ea6d87921a7f06876cd046bd2ed2dd1d1",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 232,
+      "printed_page": 219,
+      "native_text_chars": 0,
+      "ocr_chars": 1072,
+      "ocr_sha256": "41df305adb39d7aac255a60686e35b5aca2120e91c1aa114a06f705e8eacf825",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 233,
+      "printed_page": 220,
+      "native_text_chars": 0,
+      "ocr_chars": 905,
+      "ocr_sha256": "e8fb2c3178b13486c1a7beb032089d8d447f7819455e5095757493683ad6fcf6",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 234,
+      "printed_page": 221,
+      "native_text_chars": 0,
+      "ocr_chars": 1330,
+      "ocr_sha256": "a6dfcbfd3ee284c1ae3f60cb5f6a6f9978b456b2f4e81a4880079976037375b5",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 235,
+      "printed_page": 222,
+      "native_text_chars": 0,
+      "ocr_chars": 1429,
+      "ocr_sha256": "08ddbe6e3d592bc68473d0b6fab13fbb8c225bd4e98aeae02d40ae9433ec2560",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 236,
+      "printed_page": 223,
+      "native_text_chars": 0,
+      "ocr_chars": 947,
+      "ocr_sha256": "1678605c1b3f75b485fa4c68d3dc22a723ffbd0efe8058ad47815556d1e96b00",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 237,
+      "printed_page": 224,
+      "native_text_chars": 0,
+      "ocr_chars": 1008,
+      "ocr_sha256": "81777376cbdd7e3d3fc4bc490ee57f26b332cdcef960837bd611028a15ccd7de",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 238,
+      "printed_page": 225,
+      "native_text_chars": 0,
+      "ocr_chars": 1082,
+      "ocr_sha256": "60826d2a7b111ab80b5b8e3357b77ff1823ec8a965b77ec4ca4e7ee3d46a8a46",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 239,
+      "printed_page": 226,
+      "native_text_chars": 0,
+      "ocr_chars": 1367,
+      "ocr_sha256": "47a9b57285d8294d1867711a3700369ee3988ab3a7ef69cc754e8b16c593c7d8",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 240,
+      "printed_page": 227,
+      "native_text_chars": 0,
+      "ocr_chars": 1374,
+      "ocr_sha256": "e8a387316b5f13bae8bd3827f9cbe4bd5606453dfe23062b68b7fb935654d348",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 241,
+      "printed_page": 228,
+      "native_text_chars": 0,
+      "ocr_chars": 1183,
+      "ocr_sha256": "64b1a4e4f5ff2dbc0710a15be33a36b9d2c562b3e3c82fc1cdc653f95afc96ba",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 242,
+      "printed_page": 229,
+      "native_text_chars": 0,
+      "ocr_chars": 2425,
+      "ocr_sha256": "b197ad9aba835a005bb32edc9f0d39aac4a9947770193ee6c91d1066543cfe42",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 243,
+      "printed_page": 230,
+      "native_text_chars": 0,
+      "ocr_chars": 3121,
+      "ocr_sha256": "c9d7445133e744888c1f0d371250d80dbf742d2068fcf8248cfc28a2eef66b0b",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 244,
+      "printed_page": 231,
+      "native_text_chars": 0,
+      "ocr_chars": 3119,
+      "ocr_sha256": "d81e2fa69c56cdea36d0a9dc073dff5f98dd3dda036ed079b222a8dd03eb00cf",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 245,
+      "printed_page": 232,
+      "native_text_chars": 0,
+      "ocr_chars": 1142,
+      "ocr_sha256": "497ca0eab1dc913b9378dfc462c7a84dc4bec83dd73a7693b7fd49337bcc3730",
+      "image_count": 1,
+      "semantic_review": "not_signed"
+    },
+    {
+      "pdf_page": 246,
+      "printed_page": null,
+      "native_text_chars": 1115,
+      "ocr_chars": 1166,
+      "ocr_sha256": "f47e3dd5e4211ffc774a86342f0d280f49025bf8e3a9e532120cfed537801258",
+      "image_count": 0,
+      "semantic_review": "not_signed"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "name": "ZUC",
+      "printed_start": 1,
+      "printed_end": 21,
+      "implementation_start": 12,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 2,
+      "name": "DES",
+      "printed_start": 22,
+      "printed_end": 41,
+      "implementation_start": 35,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 3,
+      "name": "AES",
+      "printed_start": 42,
+      "printed_end": 69,
+      "implementation_start": 56,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 4,
+      "name": "SM4",
+      "printed_start": 70,
+      "printed_end": 84,
+      "implementation_start": 77,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 5,
+      "name": "MH",
+      "printed_start": 85,
+      "printed_end": 96,
+      "implementation_start": 89,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 6,
+      "name": "RSA",
+      "printed_start": 97,
+      "printed_end": 113,
+      "implementation_start": 105,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 7,
+      "name": "Paillier",
+      "printed_start": 114,
+      "printed_end": 124,
+      "implementation_start": 117,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 8,
+      "name": "NTRU",
+      "printed_start": 125,
+      "printed_end": 134,
+      "implementation_start": 128,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 9,
+      "name": "ElGamal",
+      "printed_start": 135,
+      "printed_end": 145,
+      "implementation_start": 137,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 10,
+      "name": "ECC",
+      "printed_start": 146,
+      "printed_end": 160,
+      "implementation_start": 150,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 11,
+      "name": "SM2",
+      "printed_start": 161,
+      "printed_end": 182,
+      "implementation_start": 166,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 12,
+      "name": "McEliece",
+      "printed_start": 183,
+      "printed_end": 198,
+      "implementation_start": 188,
+      "pdf_offset": 13
+    },
+    {
+      "chapter": 13,
+      "name": "SHA3-candidates",
+      "printed_start": 199,
+      "printed_end": 228,
+      "implementation_start": null,
+      "pdf_offset": 13
+    }
+  ],
+  "generated_at": "2026-11-11T09:50:54.388222+08:00"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "direct-skill-capabilities-1",
+  "workflow_version": "2.0.0",
+  "version": "1.0.0",
+  "source_id": "LZC-2013-SCAN",
+  "source_sha256": "aa252f1c82e4d1bdfd1b626730daab34202095ee5b19b445498bbeb2f7578ccb",
+  "mode": "single-router",
+  "capabilities": [
+    {"capability_id":"C01","revision":1,"status":"verified","card":"source-review.md","served_by":"c-for-typical-cryptographic-algorithms-skill","evidence":"../../evaluation/reports/source-review-agent.json","scope":"source review and reasoning; independent context self-graded, not blind benchmark"},
+    {"capability_id":"C02","revision":1,"status":"verified","card":"exact-instances.md","served_by":"c-for-typical-cryptographic-algorithms-skill","evidence":"../../evaluation/reports/exact-agent-review.json","scope":"seven bounded arithmetic interfaces; not complete cryptographic schemes"},
+    {"capability_id":"C03","revision":1,"status":"verified","card":"c-equivalence.md","served_by":"c-for-typical-cryptographic-algorithms-skill","evidence":"../../evaluation/reports/c-audit.json","scope":"bounded C differential audit; optimization procedure without measured speedup"}
+  ],
+  "legacy_candidate_layer": {"verified":7,"reference":49,"needs_review":0,"rejected":2,"full_scheme_active":0},
+  "compiler": "not used; direct construction under workflow section 10.5"
+}

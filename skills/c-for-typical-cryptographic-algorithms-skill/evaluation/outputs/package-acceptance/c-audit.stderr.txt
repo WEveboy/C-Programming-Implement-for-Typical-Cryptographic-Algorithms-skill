@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<workspace>\tmp\package-acceptance\scripts\run_c_audit.py", line 88, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "<workspace>\tmp\package-acceptance\scripts\run_c_audit.py", line 15, in main
+    from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+ModuleNotFoundError: No module named 'cryptography'

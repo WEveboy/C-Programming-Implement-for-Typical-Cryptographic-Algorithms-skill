@@ -1,0 +1,752 @@
+{
+  "version": "1.0.0",
+  "maturity": "research-trial",
+  "object_format": "sha1",
+  "coverage": "payload including ZIP; manifest/checksums/plan excluded to avoid cycles",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 32,
+      "sha256": "74f066599d3fe2817756c3e532a869d370d4294c5c0a188487da2855f9b2378e",
+      "git_blob_sha1": "b8e1e5042b95bf8199eb3ff7bff943458648f5f1"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 930,
+      "sha256": "d359690fcecb157229649fcd5fdf624b12b9edc0d174b1d78dc26c510dcf4fb8",
+      "git_blob_sha1": "e5cb4838de173166cebe4b1ddeee1f507ca61f85"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 112,
+      "sha256": "f9ae47f97041f4b01c0c9ad6682f82b4bb179a08c4184615a14ce7ddb2082ca3",
+      "git_blob_sha1": "19b2f3ca4f64acd838e6394a9066cac6fade4717"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 352,
+      "sha256": "f73b472e255d8d08221bc12d41fb3db912a975a583a134106d95ebc722da0f40",
+      "git_blob_sha1": "4f594a4e3930afa2b0d7d0170d26d55c8cbbe05c"
+    },
+    {
+      "path": "CONTRIBUTORS.md",
+      "bytes": 751,
+      "sha256": "6ea5804cabf7dc55fbd33a6a22efdcf7ccbc2c1efd2dd2c7852d74e981570e3d",
+      "git_blob_sha1": "b53da4bf00e4c49a2c95b8e74f44ca1c62637415"
+    },
+    {
+      "path": "docs/build-map.json",
+      "bytes": 21860,
+      "sha256": "71a730df4e69c50163b73d6b0a2dc35e15ad54db0352ef4447ab8014f74d6596",
+      "git_blob_sha1": "23a67d1851464f73e9839ec901d8de59a02a19ae"
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "bytes": 1519,
+      "sha256": "7ad41f93a35f3e1b2d81f00b0aa40d2c89dfa82710575b0efeec454ee9ddefcb",
+      "git_blob_sha1": "56f6b9f430ecc8582d010b1cf899c127e5e63b18"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2076,
+      "sha256": "7daa2a7460aef1d8517556eab1379ad6c548e5b0dfedeb97abdbbb7777b2d615",
+      "git_blob_sha1": "03d01f189b2342a1d9642d34273da76df684350d"
+    },
+    {
+      "path": "docs/WORKFLOW_2.0.md",
+      "bytes": 3400,
+      "sha256": "241346d78e919c4ebf96dfd323d85750210686544add89af9e7ba681729b32aa",
+      "git_blob_sha1": "9fc94fd11ecc674b7edc7cdb93ef1437ecee3e22"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2344,
+      "sha256": "0e877bb336005b5fba73690c50ee62cd1335f76e31c0f47a38e7b80506942e3b",
+      "git_blob_sha1": "a11b8cff09fdb09673bfe0fd3d8fd4a756bbca68"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 344,
+      "sha256": "202550464e6bad3fc57c0b44fd2e64fc22c107437ac79f38fc886a5b736c9112",
+      "git_blob_sha1": "b78d521ff0b1cfa38c70e38c9dc0953725ae1878"
+    },
+    {
+      "path": "releases/v1.0.0/c-for-typical-cryptographic-algorithms-skill.zip",
+      "bytes": 320426,
+      "sha256": "302898fa65d20849a2bec67b786dc6eecd1e86651ef7c461f875f07af95c0c4c",
+      "git_blob_sha1": "b675fd8796430cb04bd1a155c8774f9575d75df0"
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "bytes": 3245,
+      "sha256": "772156a8bd7d41bb5137d1768f0844284bd347198634f6bdefc172d31e7cf4a1",
+      "git_blob_sha1": "c41925c9b5187588ea22ab9774af75c7b73aaa63"
+    },
+    {
+      "path": "scripts/verify_remote.py",
+      "bytes": 1013,
+      "sha256": "b2b7035e04f77c0c616f6d1bc9e641df32ecb4fb5df0a0e34447e020117a9247",
+      "git_blob_sha1": "2fcf4a2ec42727e4210d137d7e597001e2ed9d97"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/agents/openai.yaml",
+      "bytes": 387,
+      "sha256": "181650ce407362656e760afcd472b5fc91b6cc40db6df7dc8b3e1c5a6ed94320",
+      "git_blob_sha1": "5867021619518256c71cbbe8d3db90a7e5da916e"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/ALGORITHM_CONTRACTS.md",
+      "bytes": 8742,
+      "sha256": "61a13218abc8f9ad4a068d86dbe54a5b2939cb19fbb4505e9a7100c1cd55d5d7",
+      "git_blob_sha1": "863e603a96fdadf24e18ff694993584c438d011d"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/AUDIT_REPORT_V02.md",
+      "bytes": 2838,
+      "sha256": "f587e7084927aa0749bed53ed2c267966f7f30793199789b65bb05b3aba82d32",
+      "git_blob_sha1": "1ec32fb063179c65ada87ef8ecc3d549fe16f88e"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/C_IMPLEMENTATION_PLAN.md",
+      "bytes": 3211,
+      "sha256": "060c5536d5f4240ed9de23217e7f7b33c3da6f8ecb59696bdb5f07a2cf80a6ac",
+      "git_blob_sha1": "a97df20c5385fd189434648f62c2418195cc03d0"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/01-zuc.md",
+      "bytes": 3900,
+      "sha256": "d52cdafb3588e1651dd4bf2140b8e0e648da948771c7cd18968f0cb0117a5479",
+      "git_blob_sha1": "314af3aeae7dfc694b5c09b690ae607130514633"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/02-des.md",
+      "bytes": 3479,
+      "sha256": "252b127435fac3fa42881d3fa3c436429c6e24426234468f3877f0a1e9569308",
+      "git_blob_sha1": "ea09ee3a240ee31b2183fddbe217de1df36285d0"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/03-aes.md",
+      "bytes": 3836,
+      "sha256": "56e1eefeae13abb314850cdf0311b7ea665d745992232655207ce2b93f1d0c8f",
+      "git_blob_sha1": "0a51202ee28424138ac2d5ff1942ac4ebf2f7edc"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/04-sm4.md",
+      "bytes": 3137,
+      "sha256": "0f72d7caa292feeb1019cf31452c820893570b94ae997f37afb95f1e678c85bf",
+      "git_blob_sha1": "1c3b15f65bb140806afa648e9670d2ea13bff0af"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/05-mh.md",
+      "bytes": 3278,
+      "sha256": "8fe4bf1980585892ebf5c865e145655166f01135a2417d236396fcfee9ecc37c",
+      "git_blob_sha1": "1cfd4567628683bffa08a265fdc7bc34a6d75e67"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/06-rsa.md",
+      "bytes": 3358,
+      "sha256": "98d831348b2867a217f01db220d235ef90f44df0619285173dd7797f18be6bb0",
+      "git_blob_sha1": "34c03c0c7942afde38042a733db3cc5f4d42b405"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/07-paillier.md",
+      "bytes": 2936,
+      "sha256": "428d9757ab7dbe2f4236af8a690e84d3c4cfad0a1e2681eaed0fdb72f8133aaf",
+      "git_blob_sha1": "db7fcb3f307882cb9ea2d5ea92d6ed1a707395d3"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/08-ntru.md",
+      "bytes": 3097,
+      "sha256": "b4e19597c6f873a80202ca8055887059c3cc43ba771f4ba2461e680362496b72",
+      "git_blob_sha1": "1903f522005be3be29bbe9d255329165cd320612"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/09-elgamal.md",
+      "bytes": 3475,
+      "sha256": "06ea9117ad3f775291057826be70199d0b3fbcb11d5ddd0ef7e639a56d14ad37",
+      "git_blob_sha1": "c872e960d19dd09da6848e7f923655cc2b9ffa47"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/10-ecc.md",
+      "bytes": 3107,
+      "sha256": "267e3804237d2e482bb8e7b7bbee336c7fe27dce64bf2469e78f5c18e05c4673",
+      "git_blob_sha1": "5557ea464bcfab9ce6aeafaa1ce1f7f647a56652"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/11-sm2.md",
+      "bytes": 3121,
+      "sha256": "d34fc9e23d3ab71e1a8311fd717b1dcdae123e0c9ed0b5f5397766f5219876fe",
+      "git_blob_sha1": "db9fb8d714d0264a7a9350c4a8b27fa39ebe6481"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/12-mceliece.md",
+      "bytes": 3053,
+      "sha256": "72776bfe2bc16208797ecdde599e8c76f5a165060a1a65a0c7aad93eb43c6d66",
+      "git_blob_sha1": "98ce6823114b8eeca92b8a3ffb958181b35b9b5f"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/docs/chapters/13-hash.md",
+      "bytes": 8545,
+      "sha256": "9721f5b4775defdf995af70d2bb5901051ea6ad7ed9099f7c558ce8ef434bb00",
+      "git_blob_sha1": "734687e47bacb42cc73ae1d7610459acdd4ae971"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/c-audit-cases.json",
+      "bytes": 162392,
+      "sha256": "30403eb855dbe1fec67f2062e13d2616f21c61ef093b0d4c4882ed3be0565175",
+      "git_blob_sha1": "99bd152f32ffce351713dc5ffad03a42e048f8ba"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/cases.json",
+      "bytes": 1578,
+      "sha256": "92664cdab7f029860a02b1c58b1d61182ae2f3802e7b5c8cdd9856663e18f97b",
+      "git_blob_sha1": "2218a938c8aab44d2ead3562a17b3d64f04ff3ac"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/followup-cases.json",
+      "bytes": 777,
+      "sha256": "a663e01eecee852b3f73f57bd39898ad25b7d1800874107c02437781ec938c6e",
+      "git_blob_sha1": "2e15b2d3efacee2099ce24ac24e2d0da054ef9e1"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/c-audit.stderr.txt",
+      "bytes": 414,
+      "sha256": "e8d05bbd7fecc4f6d195296dfc525abe1c753c86763cc2d2770bcad4416a496d",
+      "git_blob_sha1": "a31d15965fc15380de614d8fb8b938cdb538a570"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/c-audit.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/constants.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/constants.stdout.txt",
+      "bytes": 29,
+      "sha256": "29c3edcd15884e59f522bd706803350f72063894b63edafd571bd2a8dac3f52e",
+      "git_blob_sha1": "412343d7f9d3c1d4d4f49a8880b4d15ee9671531"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/exact.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/exact.stdout.txt",
+      "bytes": 503,
+      "sha256": "b6695a046661f081ad662522e3ba9aa74ad38524c2b1f9dd1edc5e80d5ed2568",
+      "git_blob_sha1": "d60f30aafa7de152d602243590b571d55ba9e1c0"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/executed-exact-plan.json",
+      "bytes": 161190,
+      "sha256": "fb82ee13655835ad80f83cd122a105d0089aa5c30c099391c2a2beada5943bb9",
+      "git_blob_sha1": "c7fea3a790fe38f5cd60b646be3113b36c32fde9"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/followups.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/followups.stdout.txt",
+      "bytes": 29,
+      "sha256": "a105a7b58b1874f3d3e3039b39ec522be19b61375e68ab7e644cb0529e616ec1",
+      "git_blob_sha1": "9c06f37d21bc4c125a09a1176aa74925d8973c09"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/hash-source-defects.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/hash-source-defects.stdout.txt",
+      "bytes": 82,
+      "sha256": "41ae5a8672cbb2711b06e487855aae61074a9af7bd433c6afeee0e0c9960f7ef",
+      "git_blob_sha1": "6c2f0fd5e26bd96b470b6f1e2f7456afd77749ac"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/invalid-paillier.md",
+      "bytes": 802,
+      "sha256": "c3c9f0b914ff8d80ae7a5c985ebcb941b3406b74486bff2c3e62d37806ecc96c",
+      "git_blob_sha1": "9ba34159ee957012fcf679c7fdd20207a4442694"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/invalid-paillier.tool.json",
+      "bytes": 268,
+      "sha256": "f5e12822743353dea79698fc7fba35670917c36fececf34a364814d54d5762d0",
+      "git_blob_sha1": "1b68bb9642997dfe6e62b6a8e8be38e8e59f6036"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/normal-rsa.md",
+      "bytes": 965,
+      "sha256": "dc2d58477c89fd22daa8ce10ea4663498a59f1163fa6e593c690ae8162c04466",
+      "git_blob_sha1": "b52de2c4c935c7de171bd5e2a27ec216e1607c3c"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/normal-rsa.tool.json",
+      "bytes": 301,
+      "sha256": "4b893215ab6bdae92174f9d48064c0bf7771785febd871aa8c76c4d3af2c0252",
+      "git_blob_sha1": "4348ebdda72bcb7e4d9685ab674ae501ee285741"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/package-c-audit.json",
+      "bytes": 200116,
+      "sha256": "1b14cb1a948ffa17303cb1b9950bd6c4a6e114780bcc0fab68a8eb1a001b2d49",
+      "git_blob_sha1": "13ff45d75b9ac5a4fc0d79c56419dd4a14ddabc9"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/package-constant-audit.json",
+      "bytes": 2400,
+      "sha256": "ff0026068d9552944952b3a91f0de2d1e70a68d4f792389aab8530d7b978a87a",
+      "git_blob_sha1": "7be009e8b1bbe7cc095b470f9f29656a6d83a3a1"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/package-exact-agent-review.json",
+      "bytes": 129477,
+      "sha256": "a3ed2127934cb28ba5b807d159466a5b8a6a9cd73a072fb3da38dd63c463d2a5",
+      "git_blob_sha1": "997ca576b6981168d54b714c69d8573819f27a15"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/package-followups.json",
+      "bytes": 2276,
+      "sha256": "21552e053bffb4cb8295476bdacb88879d652b5efb6b6ad3e40fe1d5fdd618ea",
+      "git_blob_sha1": "673694f4f952241f950a9c998e3a622adbc4e0c3"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/package-hash-source-defects.json",
+      "bytes": 27522,
+      "sha256": "a4c6085fb272051eac36b61a0e286c7032d35569996268f99c8dfacd3185adfc",
+      "git_blob_sha1": "8c42d1897f7f8680343d331cadfe3a47883f992b"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/package-witnesses.json",
+      "bytes": 9125,
+      "sha256": "978cdd08fdcc198d23562cb0144e5521bd464ce0669439479226819f3b2264f0",
+      "git_blob_sha1": "79f2602ba97caeeb4be60527dc0f622805bf9b3a"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/string-sort.md",
+      "bytes": 417,
+      "sha256": "a25d4a3e4be76b1082afc0c393903692c5de01003626223caafd1891b62fcc55",
+      "git_blob_sha1": "dc3ae44e37c97133b426ec020c912136d11b343b"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/witnesses.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/package-acceptance/witnesses.stdout.txt",
+      "bytes": 524,
+      "sha256": "05772acdaddce1a43738426ce5d4d170585134fbb9f89d0292d05004111bd408",
+      "git_blob_sha1": "43c921f160bfe8016f1871ac59d50eb471c60e12"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/01-aes-layout.md",
+      "bytes": 1451,
+      "sha256": "22e78ab799beae76f47efcb8d64f71176cdc858cb580e8f36f8da8d8ea49ec8c",
+      "git_blob_sha1": "05d82d5249df073cbf5a74a474df5b9591742b25"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/02-des-ingress.md",
+      "bytes": 1383,
+      "sha256": "368fbe67a2817497441d67d342fe3671bcaaf24c7d37238978401a36c12a91ed",
+      "git_blob_sha1": "61c23b3a6a4c688393981ceb1608c042d2599f90"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/03-sm2-incomplete.md",
+      "bytes": 1423,
+      "sha256": "b5cc51236e996d0aae7b063eeedb84c35c65209ebc01a4f3c2b0ad0d76ebac08",
+      "git_blob_sha1": "62a160327462f226df09a15946efc4991f53e34c"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/04-string-sort.md",
+      "bytes": 978,
+      "sha256": "9e309f3ca20a140bb517ee294281bfa48c87a7d21d4b6da7545c03824f113025",
+      "git_blob_sha1": "0afc4297110ce6e143f0cb984f96db0fcc511d9a"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/05-missing-parameters.md",
+      "bytes": 1319,
+      "sha256": "cc478983101f948de02e0dcb9c9929bb4177930eff068777a6896076afcbf12c",
+      "git_blob_sha1": "b559e2237cbd93492b0a335523c364f930da0fe2"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/distinguishing-results.json",
+      "bytes": 1023,
+      "sha256": "b0d2f9e21eae2781aac91c38c78e80fdfd734380bb159b9ac2a6689331dcfaac",
+      "git_blob_sha1": "6f092898c4df5c3b6a8612516e7fe674c5c92a14"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/distinguishing_examples.py",
+      "bytes": 3253,
+      "sha256": "9006bd31fe98ae01d83096e1b597ffca2830f15e970d3d521ee0d3b3e24aa9eb",
+      "git_blob_sha1": "510c9391f2491b397b5f872914cc3d89b8910775"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/outputs/source-review/REVISION_LOG.md",
+      "bytes": 805,
+      "sha256": "1e9d3bbe9aad5ee1a98fb50f4d1b1f3190400c8feccafa993fd6a0cf6fa6291a",
+      "git_blob_sha1": "10bf3ae57a97080866bc8b46501212748d0a0243"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/c-audit.json",
+      "bytes": 200116,
+      "sha256": "c28e4e2f9b50f7f6a2af8e7fcb4c00333c0d0dbf96e3b49cbb30589bceae6d83",
+      "git_blob_sha1": "bfc03f0a516c7cd12686e4c46d887ba095699cb0"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/constant-audit.json",
+      "bytes": 2400,
+      "sha256": "ff0026068d9552944952b3a91f0de2d1e70a68d4f792389aab8530d7b978a87a",
+      "git_blob_sha1": "7be009e8b1bbe7cc095b470f9f29656a6d83a3a1"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/exact-agent-review.json",
+      "bytes": 129507,
+      "sha256": "38c3304ed6cded2e51f3fec1ced3bd72d9c059e3a9b14aa199f81e105c2ef72c",
+      "git_blob_sha1": "91ebc8c1e674a571e720e0ba5006f19f3075401f"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/followups.json",
+      "bytes": 2276,
+      "sha256": "21552e053bffb4cb8295476bdacb88879d652b5efb6b6ad3e40fe1d5fdd618ea",
+      "git_blob_sha1": "673694f4f952241f950a9c998e3a622adbc4e0c3"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/hash-source-defects.json",
+      "bytes": 27522,
+      "sha256": "a4c6085fb272051eac36b61a0e286c7032d35569996268f99c8dfacd3185adfc",
+      "git_blob_sha1": "8c42d1897f7f8680343d331cadfe3a47883f992b"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/package-acceptance.json",
+      "bytes": 10612,
+      "sha256": "68acdf162341495ba64b2f6a2be286c09affb032202f02872587b583e3b4e16f",
+      "git_blob_sha1": "00150a9ce8d7137b32b5f9f94f6ac927e8b4b68c"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/project-validation.json",
+      "bytes": 388,
+      "sha256": "72ff2333b22dc26d1dd6550b23ebb1b11040bfdccfa63e79c85fefb056f9e75b",
+      "git_blob_sha1": "d9d55605ed7c3183c134162990584be65d16d2e8"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/source-review-agent.json",
+      "bytes": 6624,
+      "sha256": "8185d788bd3699c74fc18d6d14da4317465874689bd4ddfcaaf5cc6137e63364",
+      "git_blob_sha1": "b4954a129244d4d59a7f857c6ab22d7f69d85f82"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/reports/witnesses.json",
+      "bytes": 9125,
+      "sha256": "978cdd08fdcc198d23562cb0144e5521bd464ce0669439479226819f3b2264f0",
+      "git_blob_sha1": "79f2602ba97caeeb4be60527dc0f622805bf9b3a"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/requirements.txt",
+      "bytes": 21,
+      "sha256": "8b5c18678b29b5e8e0fb586a35ac1dce3ccd9da321e8f12ace0e118350b4e568",
+      "git_blob_sha1": "55c4e86c65c4136ace109252da8b4081be9dd162"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/REVISION_LOG.md",
+      "bytes": 1964,
+      "sha256": "7eff1cd207f112ed11569519a2eaf45dcb532a48b6e3adc28332d0a48371445e",
+      "git_blob_sha1": "116764eef1d3c35878234e81c74a51053f2b8546"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/snapshots/cases-initial.json",
+      "bytes": 1539,
+      "sha256": "593379c9ffe8787bee738f7a2f5c181e5d285a1e828b9cd6315973c55adfb101",
+      "git_blob_sha1": "a1fa3a76c8bcc639143341743e9a4314d2159e77"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/snapshots/verify_witnesses-initial.py",
+      "bytes": 7418,
+      "sha256": "c0c1f470b011ccc68d00e8181c88f4edf6270302f8f5605958b86d95ae57589b",
+      "git_blob_sha1": "6e5e109b022f5b9449427e9d762cc71779ade4cf"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/snapshots/witnesses-initial.json",
+      "bytes": 9236,
+      "sha256": "665945a92599619f6305c422f2460bdf00ceaf58bc528e1a7abaf3c083b5936b",
+      "git_blob_sha1": "d43440ee321d2297702e794ec0e78f6675fcb300"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/evaluation/tasks/exact-agent-cases.json",
+      "bytes": 161190,
+      "sha256": "fb82ee13655835ad80f83cd122a105d0089aa5c30c099391c2a2beada5943bb9",
+      "git_blob_sha1": "c7fea3a790fe38f5cd60b646be3113b36c32fde9"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/reference-c/audit_cli.c",
+      "bytes": 10662,
+      "sha256": "0b296114d89074ac044a60f544f4e6c79d90fb3e81b7dc182b06e6267d0ae6e4",
+      "git_blob_sha1": "f30b072af305bb8680f3c43c7e06637711906a00"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/reference-c/constants.h",
+      "bytes": 9216,
+      "sha256": "6d7920ee2283603e81705ba8657f00a94e7900c17b92f26584bb3b38e777d5c8",
+      "git_blob_sha1": "dba2492e4d717cad99dd7bc52e3ab22b94534bbc"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/reference-c/README.md",
+      "bytes": 3011,
+      "sha256": "085356529f957a5035cd1a8fe09dbdb75e6f3248d1c5e80275cd640308936fa0",
+      "git_blob_sha1": "554650ed927e48628dd16486b00ab609c5067419"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/references/capabilities/c-equivalence.md",
+      "bytes": 1697,
+      "sha256": "9df07d32f12e86a65ed512af5f47da00e3e495aefb8b536d12d2f15fd0ede495",
+      "git_blob_sha1": "aa37647e341df881c0d46fcfc88264aba0b7e0cb"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/references/capabilities/catalog.json",
+      "bytes": 1337,
+      "sha256": "80fbd5ce7abef55598c095c50c7acfaa83515e063d85e07b33b51bb42d9fc566",
+      "git_blob_sha1": "519a626796f27fe4df8ad214dbd96be4b2b165b4"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/references/capabilities/exact-instances.md",
+      "bytes": 2807,
+      "sha256": "f1f31844f04c214105ccf20e009c0c16bcb1f5b52c8067c99545c31b2d802a60",
+      "git_blob_sha1": "1dd2788c42b2b6d6602fbcf0c6199fd9cb5cd211"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/references/capabilities/source-review.md",
+      "bytes": 1454,
+      "sha256": "e8dd1f97edee309227f69dd0a838bac257d0c169e4834f7b320a5f3b146bc297",
+      "git_blob_sha1": "5d5a240337a03ccd70297ef4f1f442b9b7b0cd7e"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/BOOK_OVERVIEW.md",
+      "bytes": 2495,
+      "sha256": "e65c0c0804f90255dea194ee49539dda4aac92294909abaa91f4c6811feb9cf8",
+      "git_blob_sha1": "bba1f0eb98db972fd8ce842c257fb9b19a08dad2"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/candidates/ledger.jsonl",
+      "bytes": 26814,
+      "sha256": "0325f5df5673bc12302aee197f91ffad0404c058265cdd2d3580618653004720",
+      "git_blob_sha1": "8a5dbcc8109ad633bc94c5516f1bfe9fd6c14dc3"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/candidates/summary.json",
+      "bytes": 215,
+      "sha256": "ec43edaed37a95d81c7d7c88b405071597cf2475f2993fa124ab0125269ae52d",
+      "git_blob_sha1": "2057b4ca45d3908964cee282561f5597475b87bd"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/CODE_REVIEW.md",
+      "bytes": 11349,
+      "sha256": "466c6cb5135fef435b0a87a3d5927541c9e667725745c0ce18df428cb41bf60d",
+      "git_blob_sha1": "691778f99fcf648854aaa2664f05b0c2d3bb6606"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/CONSTANT_REVIEW.md",
+      "bytes": 3319,
+      "sha256": "dc392f1f1aec6d1dd78b1b39407fb92d0fdd626fecd9046deb0af289425c56b9",
+      "git_blob_sha1": "324f98abc7f3bb9724347f114c4e143efd6ab26b"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/constants/des-tables.json",
+      "bytes": 2361,
+      "sha256": "7fb2be896aaa57ca5e54ef9650f4145dd737872ecd6a509ca1b1d9960b3ea9e7",
+      "git_blob_sha1": "12991df3a6144d975a485f3c118d344a576655dd"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/constants/hash-version-tables.json",
+      "bytes": 1627,
+      "sha256": "8f8e68d5134ad2362cebf0e4b71a30726878782625458562c7d51d13ee98fd40",
+      "git_blob_sha1": "11f8a04f48bfa88e03761a10746cf72bdb9c87d3"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/constants/sboxes.json",
+      "bytes": 3034,
+      "sha256": "d62794e29844ebdefb80a307bd3c175198a6e17688cbc5c18e03b6c797584333",
+      "git_blob_sha1": "0ee9a86cdb7a75410e808b8a97df8ad33bbbbc86"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/constants/sm4-rounds.json",
+      "bytes": 1046,
+      "sha256": "b283d8ed5ffca75c1ef0305729a07e23ca358e4545034d2fe49021bc4d24fba6",
+      "git_blob_sha1": "4665cce978dbc264423459175aca121989e04d14"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/coverage-audit.md",
+      "bytes": 2189,
+      "sha256": "816a7a2b7076173f38c72550373ffd93578f25f73809eaca0d733f82cf26e435",
+      "git_blob_sha1": "459f646770ed809a7a57c07b8577fc3356f450dc"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/delivery-checklist.json",
+      "bytes": 1085,
+      "sha256": "c7f58987f65cba93e0ed36690500de119e1c6fd556fe060f522031fe9d414d2a",
+      "git_blob_sha1": "cb4b36da4ed122dec6f2382d50d30225798e8dc8"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/DIGEST.md",
+      "bytes": 2243,
+      "sha256": "88cb3c1821a9bd4d1724482a7a61980678d6eb0bece2b55da33376ba9fb1957c",
+      "git_blob_sha1": "d7feb2c731676296e4044df62c6389912462beda"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/GLOSSARY.md",
+      "bytes": 1653,
+      "sha256": "d5793de42357ec4d73c7d52fc26568c93e6fbe5e6dc5c0c08f485b07530a2336",
+      "git_blob_sha1": "1d843e6b6a448bea9720d83df0e771001c3f2040"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/needs-review.md",
+      "bytes": 322,
+      "sha256": "fca00a0572c3dafd05c5db02c62a0fbd1e02ed5d37e0f8f4019631271ecb3877",
+      "git_blob_sha1": "7ad9be4de49acf76d0971c883b97e3f91ad83b22"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/REDACTION.md",
+      "bytes": 310,
+      "sha256": "f093500b5520709fdde8b4823a881e14c57b05ef0090be4df6be7d9b0af832c4",
+      "git_blob_sha1": "2d39b21de0663aa77e542d3e48a14bd9a5f12f24"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/references.md",
+      "bytes": 12211,
+      "sha256": "2501af1ee2a39d49b549ba2c291ac1e9a6b092d433cd8f47ec68879272d6091c",
+      "git_blob_sha1": "19ef315a932937ba22e25d5b51fd1f7834eec34a"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/rejected.md",
+      "bytes": 618,
+      "sha256": "ea99aac1fed8ad06b46089c0bbec0ef0173aa7c413300e3590fe3a015b35f2c0",
+      "git_blob_sha1": "0c057a03176dcb98f7c5a0cde792e74aa0102307"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/review-2.0/01-04.md",
+      "bytes": 13722,
+      "sha256": "681349fbec94f809572e87761703e854bcb7f63a3e2ab9bbc00122f74d0cca65",
+      "git_blob_sha1": "ccf66cec62ccf540657af9e9e61f7dbb2419f909"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/review-2.0/05-09.md",
+      "bytes": 13611,
+      "sha256": "9ad4d8446600038cd35e5c7071c1b4a3da120260bc3c1defb9cf6bacc499174d",
+      "git_blob_sha1": "7c809c5a00bf829639f96902b947d189bb153d74"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/review-2.0/10-13.md",
+      "bytes": 11807,
+      "sha256": "e88604164082659d7103d2bdf06b47214d8a632ac211e6ce4b10e4aafbf88b6d",
+      "git_blob_sha1": "cb3c5c409d9a42ee1632c3c998790c9c84b5e825"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/SOURCE_CORRECTIONS.md",
+      "bytes": 6121,
+      "sha256": "85b4e30bb4e2a64eaee629e30be4707a19c8a54feb70d1cabcaa6aeb8f90ba17",
+      "git_blob_sha1": "a7954a4b10c531a9f32f0f2ae5d6bd04b430c66b"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/SOURCE_MANIFEST.json",
+      "bytes": 68413,
+      "sha256": "6caddb54584a6bc5aa1c7dbea238e0ff8573deffe18b57ca87d329bc0903a95e",
+      "git_blob_sha1": "a3fc1e19e09a0cc04d7df91e3c3d957d809f42e4"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/tasks.csv",
+      "bytes": 5820,
+      "sha256": "c9121cfb94d35498bf31785e840471a52dcaa2b59ea1ac430b56660e48acc75b",
+      "git_blob_sha1": "44bca0ad02c0df5874301f86ad4ed44a956fde77"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/verified.md",
+      "bytes": 1532,
+      "sha256": "3d8c7a1952a3d53724bc9e804b291d5b44d6b6efd5c70d4515d66bf67dcf0979",
+      "git_blob_sha1": "1c44b309be264ba01dcdd3cb41a2bd9ae2c1a527"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/research/WORKFLOW_SOURCE.json",
+      "bytes": 196,
+      "sha256": "4a36e1debb6b4f7893b67d27e3252f261b2cb3e0a3131696912756f1103eb866",
+      "git_blob_sha1": "0c2e7bcd9885dcd5ed1a25a4325843d7b24ffe84"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/audit_constants.py",
+      "bytes": 3241,
+      "sha256": "dce5e2b7b4d9ae578f9045ea17d0bfac230126923139c9b7a8b3f88925f4f180",
+      "git_blob_sha1": "37d6fb32a17f06cd7b137ca341cc24dcce310bf2"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/exact_instance.py",
+      "bytes": 7243,
+      "sha256": "5ca15e60f34170fc1fe6395cec4e44f79887818d294e661b46cdf7e70b0c09b7",
+      "git_blob_sha1": "3937cd279c6ced3477c038401dcf16488d2eba9f"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/generate_constant_header.py",
+      "bytes": 1549,
+      "sha256": "ac91587507c2dd18ef6c24608cbf1f7e975137e37f6d83424af899d76cfee545",
+      "git_blob_sha1": "a911fff85d39aaaa10267b659a0b0b767f394f5b"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/run_c_audit.py",
+      "bytes": 6721,
+      "sha256": "df28251dad83b0a071dcd1d513fd939e7bbd9c3578c92bf614787b0e35fba761",
+      "git_blob_sha1": "f599dc9005f6d956ef29612d9231ca860b82b978"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/test_exact_instances.py",
+      "bytes": 8039,
+      "sha256": "2def7cd522711df82be689dcd00bd3af75a86e1cb2e332ad3d0286e460408440",
+      "git_blob_sha1": "eb077ec2360b38c258067b695e010c1543a131c1"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/test_hash_source_defects.py",
+      "bytes": 6748,
+      "sha256": "d3df1b58873a6b8f09a36601737d597b03f43f31422b1c3458b161ff1c95b836",
+      "git_blob_sha1": "52982767b6debb0fcc161512ed764489a1ee9a1c"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/verify_followups.py",
+      "bytes": 2480,
+      "sha256": "fb22db0677f3f9aa5660f6b03022d079f72216d273cbd6b934321d6eafb29a6d",
+      "git_blob_sha1": "e41976a6d08d01d214abacb406e99b3932f68605"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/scripts/verify_witnesses.py",
+      "bytes": 7612,
+      "sha256": "eea13d4c4c872ce0f402dd8294a175977f6c9b486df3c86852add56d57d048af",
+      "git_blob_sha1": "97c846069e6bc936c5f774e2fc39e13ce725112e"
+    },
+    {
+      "path": "skills/c-for-typical-cryptographic-algorithms-skill/SKILL.md",
+      "bytes": 5141,
+      "sha256": "8e0a5ac93f39cd1766fb3b686a3cec64356db3190da51188529ea180a841960e",
+      "git_blob_sha1": "ba3467e2e22cc3082c3bd81f4db617be250e2ea6"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3146,
+      "sha256": "2d8d4a1d008431e3a7f61438a942f52d9f9a2fe726ac7a78363f021007ef8dee",
+      "git_blob_sha1": "2719688b9323d38f4f95940eb0dd916298c261b8"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+      "git_blob_sha1": "3eefcb9dd5b38e2c1dc061052455dd97bcd51e6c"
+    }
+  ]
+}

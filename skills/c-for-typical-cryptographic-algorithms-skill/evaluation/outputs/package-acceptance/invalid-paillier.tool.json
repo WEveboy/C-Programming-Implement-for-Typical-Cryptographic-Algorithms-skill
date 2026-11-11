@@ -1,0 +1,17 @@
+{
+  "id": "invalid-paillier",
+  "input": {
+    "algorithm": "paillier",
+    "p": 7,
+    "q": 11,
+    "g": 5652,
+    "message": 42,
+    "r": 42
+  },
+  "actual": {
+    "status": "rejected",
+    "reason": "r/g must be units"
+  },
+  "exit_code": 2,
+  "expected_exit": 2
+}

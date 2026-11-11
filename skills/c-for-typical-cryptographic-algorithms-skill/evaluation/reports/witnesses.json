@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "execution_mode": "actual_execution",
+  "test_scope": "Python exact small-parameter self-check",
+  "c_implementations_tested": 0,
+  "blind_evaluation": false,
+  "python": "3.12.14",
+  "cases_sha256": "92664cdab7f029860a02b1c58b1d61182ae2f3802e7b5c8cdd9856663e18f97b",
+  "script_sha256": "eea13d4c4c872ce0f402dd8294a175977f6c9b486df3c86852add56d57d048af",
+  "planned": 40,
+  "completed": 40,
+  "assertions_passed": 38,
+  "known_source_mismatches": [
+    "paillier-book-r42",
+    "sm2-book-shared-point"
+  ],
+  "unexpected_failures": [],
+  "results": [
+    {
+      "id": "rsa-private",
+      "kind": "arithmetic",
+      "actual": 937,
+      "expected": 937,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "rsa-book-first-block",
+      "kind": "original_book",
+      "actual": 1692,
+      "expected": 1692,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "rsa-all-residues",
+      "kind": "arithmetic",
+      "actual": 2537,
+      "expected": 2537,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "rsa-crt-all-residues",
+      "kind": "arithmetic",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "elgamal-book",
+      "kind": "original_book",
+      "actual": [
+        7,
+        5
+      ],
+      "expected": [
+        7,
+        5
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "elgamal-decrypt",
+      "kind": "arithmetic",
+      "actual": 6,
+      "expected": 6,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "elgamal-reused-nonce-ratio",
+      "kind": "arithmetic",
+      "actual": 6,
+      "expected": 6,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "paillier-mu",
+      "kind": "arithmetic",
+      "actual": 74,
+      "expected": 74,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "paillier-book-r42",
+      "kind": "original_book",
+      "actual": 49,
+      "expected": 4624,
+      "passed": false,
+      "known_discrepancy": true
+    },
+    {
+      "id": "paillier-r42-rejected",
+      "kind": "boundary",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "paillier-book-formula-r23",
+      "kind": "original_book",
+      "actual": 4624,
+      "expected": 4624,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "paillier-decrypt-r23",
+      "kind": "arithmetic",
+      "actual": 42,
+      "expected": 42,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "paillier-all-messages",
+      "kind": "arithmetic",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "paillier-additive-wrap",
+      "kind": "arithmetic",
+      "actual": 13,
+      "expected": 13,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "paillier-invalid-r-detected",
+      "kind": "precondition",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-book-public",
+      "kind": "original_book",
+      "actual": [
+        32,
+        27
+      ],
+      "expected": [
+        32,
+        27
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-book-ephemeral",
+      "kind": "original_book",
+      "actual": [
+        36,
+        189
+      ],
+      "expected": [
+        36,
+        189
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-book-shared",
+      "kind": "original_book",
+      "actual": [
+        94,
+        129
+      ],
+      "expected": [
+        94,
+        129
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-book-embedded",
+      "kind": "original_book",
+      "actual": [
+        164,
+        24
+      ],
+      "expected": [
+        164,
+        24
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-book-multiplicative-cipher",
+      "kind": "arithmetic",
+      "actual": 136,
+      "expected": 136,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-book-multiplicative-decrypt",
+      "kind": "arithmetic",
+      "actual": 190,
+      "expected": 190,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-book-point-count",
+      "kind": "arithmetic",
+      "actual": 223,
+      "expected": 223,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-order",
+      "kind": "arithmetic",
+      "actual": null,
+      "expected": null,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-repeated-add-vs-double-add",
+      "kind": "arithmetic",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ecc-inverse-pair",
+      "kind": "boundary",
+      "actual": null,
+      "expected": null,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "sm2-toy-public",
+      "kind": "arithmetic",
+      "actual": [
+        7,
+        2
+      ],
+      "expected": [
+        7,
+        2
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "sm2-book-shared-point",
+      "kind": "original_book",
+      "actual": [
+        8,
+        8
+      ],
+      "expected": [
+        7,
+        2
+      ],
+      "passed": false,
+      "known_discrepancy": true
+    },
+    {
+      "id": "sm2-toy-consistent-shared",
+      "kind": "cross-check",
+      "actual": [
+        8,
+        8
+      ],
+      "expected": [
+        8,
+        8
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ntru-inverse-mod3",
+      "kind": "arithmetic",
+      "actual": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ntru-inverse-mod16",
+      "kind": "arithmetic",
+      "actual": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ntru-public-key",
+      "kind": "arithmetic",
+      "actual": [
+        1,
+        2,
+        0,
+        14,
+        15
+      ],
+      "expected": [
+        1,
+        2,
+        0,
+        14,
+        15
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ntru-book-cipher",
+      "kind": "original_book",
+      "actual": [
+        -5,
+        -4,
+        7,
+        6,
+        -3
+      ],
+      "expected": [
+        -5,
+        -4,
+        7,
+        6,
+        -3
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ntru-center-lift",
+      "kind": "arithmetic",
+      "actual": [
+        -2,
+        6,
+        -5,
+        -2,
+        4
+      ],
+      "expected": [
+        -2,
+        6,
+        -5,
+        -2,
+        4
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "ntru-decrypt",
+      "kind": "arithmetic",
+      "actual": [
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "mceliece-book-toy-cipher",
+      "kind": "original_book",
+      "actual": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "expected": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "mceliece-toy-distance",
+      "kind": "arithmetic",
+      "actual": 3,
+      "expected": 3,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "mceliece-toy-16-messages-8-errors",
+      "kind": "arithmetic",
+      "actual": 128,
+      "expected": 128,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "mh-synthetic-cipher",
+      "kind": "arithmetic",
+      "actual": 147,
+      "expected": 147,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "mh-all-32-messages",
+      "kind": "arithmetic",
+      "actual": 32,
+      "expected": 32,
+      "passed": true,
+      "known_discrepancy": false
+    },
+    {
+      "id": "sha3-256-empty-oracle",
+      "kind": "external_library_oracle",
+      "actual": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+      "expected": "a7ffc6f8bf1ed76651c14756a061d662f580ff4de43b49fa82d80a4b80f8434a",
+      "passed": true,
+      "known_discrepancy": false
+    }
+  ]
+}
